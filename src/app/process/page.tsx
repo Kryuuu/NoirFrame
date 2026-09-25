@@ -67,36 +67,36 @@ const PHASES = [
 
 export default function ProcessPage() {
   return (
-    <div className="pt-32 pb-20 bg-[#080808] min-h-screen text-neutral-200">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+    <div className="pt-28 sm:pt-32 pb-14 sm:pb-20 bg-[#080808] min-h-screen text-neutral-200">
+      <div className="w-full px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-24">
         {/* Header */}
-        <div className="mb-20 sm:mb-28 pb-10 border-b border-white/[0.08]">
-          <div className="flex items-center gap-2 text-xs font-mono tracking-cinematic uppercase text-neutral-500 mb-4">
+        <div className="mb-10 sm:mb-28 pb-6 sm:pb-10 border-b border-white/[0.08]">
+          <div className="flex items-center gap-2 text-xs font-mono tracking-cinematic uppercase text-neutral-500 mb-3 sm:mb-4">
             <span>METHODOLOGY</span>
             <span>//</span>
             <span>PRODUCTION FRAMEWORK</span>
           </div>
 
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold uppercase tracking-tight text-white leading-none">
+          <h1 className="text-3xl sm:text-6xl lg:text-7xl font-extrabold uppercase tracking-tight text-white leading-tight sm:leading-none">
             FROM IDEA
             <br />
             <span className="text-neutral-300 font-light italic">TO FRAME.</span>
           </h1>
 
-          <p className="mt-6 text-sm sm:text-base max-w-2xl font-light text-neutral-400 leading-relaxed">
+          <p className="mt-4 sm:mt-6 text-xs sm:text-base max-w-2xl font-light text-neutral-400 leading-relaxed">
             We eliminate ambiguity. Our 4-step workflow balances boundless creative experimentation with exact logistical precision from first brief to archival delivery.
           </p>
         </div>
 
         {/* 4 Phases In Depth */}
-        <div className="space-y-16 sm:space-y-24 mb-32">
+        <div className="space-y-10 sm:space-y-24 mb-16 sm:mb-32">
           {PHASES.map((phase) => (
             <div
               key={phase.step}
-              className="p-8 sm:p-12 lg:p-16 border border-white/[0.08] bg-[#050505] relative overflow-hidden"
+              className="p-5 sm:p-12 lg:p-16 border border-white/[0.08] bg-[#050505] relative overflow-hidden"
             >
               {/* Giant Background Step Number */}
-              <div className="absolute right-6 top-6 text-7xl sm:text-9xl font-mono font-black text-white/[0.03] select-none pointer-events-none">
+              <div className="absolute right-4 top-4 text-6xl sm:text-9xl font-mono font-black text-white/[0.03] select-none pointer-events-none">
                 {phase.step}
               </div>
 

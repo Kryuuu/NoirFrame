@@ -31,27 +31,27 @@ const PROCESS_STEPS = [
 
 export default function Process() {
   return (
-    <section className="relative py-28 sm:py-36 bg-[#080808] border-b border-white/[0.08] overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
+    <section className="relative py-16 sm:py-36 bg-[#080808] border-b border-white/[0.08] overflow-hidden">
+      <div className="w-full px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-24 relative z-10">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 sm:mb-24 pb-8 border-b border-white/[0.08] gap-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 sm:mb-24 pb-6 sm:pb-8 border-b border-white/[0.08] gap-4 sm:gap-6">
           <div>
-            <span className="text-xs font-mono tracking-cinematic uppercase text-neutral-500 block mb-3">
+            <span className="text-xs font-mono tracking-cinematic uppercase text-neutral-500 block mb-2 sm:mb-3">
               // METHODOLOGY
             </span>
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold uppercase tracking-tight text-white leading-none">
+            <h2 className="text-2xl sm:text-5xl lg:text-6xl font-extrabold uppercase tracking-tight text-white leading-tight sm:leading-none">
               FROM IDEA
               <br />
               <span className="text-neutral-300 font-light italic">TO FRAME.</span>
             </h2>
           </div>
           <div className="text-left md:text-right">
-            <p className="text-sm text-neutral-400 max-w-sm font-light">
+            <p className="text-xs sm:text-sm text-neutral-400 max-w-sm font-light">
               Our 4-step production framework guarantees clarity, artistic integrity, and uncompromising technical execution.
             </p>
             <Link
               href="/process"
-              className="inline-flex items-center gap-1.5 text-xs tracking-editorial uppercase text-neutral-300 hover:text-white mt-4 transition-colors"
+              className="inline-flex items-center gap-1.5 text-xs tracking-editorial uppercase text-neutral-300 hover:text-white mt-3 sm:mt-4 transition-colors"
             >
               <span>DETAILED WORKFLOW</span>
               <ArrowUpRight className="w-3.5 h-3.5" />
@@ -60,7 +60,7 @@ export default function Process() {
         </div>
 
         {/* 4-Step Editorial Grid / Timeline */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-0 lg:divide-x divide-white/[0.08]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 lg:gap-0 lg:divide-x divide-white/[0.08]">
           {PROCESS_STEPS.map((item, idx) => (
             <div
               key={item.step}

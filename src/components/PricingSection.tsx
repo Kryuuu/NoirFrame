@@ -86,22 +86,22 @@ export const PRICING_PLANS: PricingPlan[] = [
 
 export default function PricingSection() {
   return (
-    <section id="pricing" className="relative py-28 sm:py-36 bg-[#050505] border-b border-white/[0.08] overflow-hidden">
+    <section id="pricing" className="relative py-16 sm:py-36 bg-[#050505] border-b border-white/[0.08] overflow-hidden">
       {/* Background Frame Lines */}
       <div className="absolute inset-0 pointer-events-none opacity-20">
-        <div className="max-w-7xl mx-auto h-full border-x border-white/[0.05]" />
+        <div className="w-full h-full border-x border-white/[0.05]" />
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
+      <div className="w-full px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-24 relative z-10">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 sm:mb-24 pb-8 border-b border-white/[0.08] gap-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 sm:mb-24 pb-6 sm:pb-8 border-b border-white/[0.08] gap-4 sm:gap-6">
           <div>
-            <div className="flex items-center gap-2 text-xs font-mono tracking-cinematic uppercase text-neutral-500 mb-3">
+            <div className="flex items-center gap-2 text-xs font-mono tracking-cinematic uppercase text-neutral-500 mb-2 sm:mb-3">
               <span>PRICELIST</span>
               <span>//</span>
               <span>INVESTMENT RATES</span>
             </div>
-            <h2 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold uppercase tracking-tight text-white leading-none">
+            <h2 className="text-2xl sm:text-5xl lg:text-6xl font-extrabold uppercase tracking-tight text-white leading-tight sm:leading-none">
               TRANSPARENT
               <br />
               <span className="text-neutral-400 font-light italic">PRICING & RATES.</span>
@@ -109,10 +109,10 @@ export default function PricingSection() {
           </div>
 
           <div className="text-left md:text-right">
-            <p className="text-sm text-neutral-400 max-w-sm font-light">
+            <p className="text-xs sm:text-sm text-neutral-400 max-w-sm font-light">
               Investasi transparan dengan kualitas visual sinematik standar production house profesional.
             </p>
-            <span className="inline-block mt-3 text-[11px] font-mono text-neutral-500 uppercase tracking-widest">
+            <span className="inline-block mt-2 sm:mt-3 text-[10px] sm:text-[11px] font-mono text-neutral-500 uppercase tracking-widest">
               CUSTOM COMMISSIONS AVAILABLE UPON REQUEST
             </span>
           </div>
@@ -124,7 +124,7 @@ export default function PricingSection() {
             return (
               <div
                 key={plan.id}
-                className={`relative flex flex-col justify-between p-7 sm:p-8 border transition-all duration-300 ${
+                className={`relative flex flex-col justify-between p-6 sm:p-8 border transition-all duration-300 ${
                   plan.popular
                     ? 'bg-[#0d0d0d] border-white/40 shadow-2xl ring-1 ring-white/20'
                     : 'bg-[#080808] border-white/[0.08] hover:border-white/25 hover:bg-[#0c0c0c]'
@@ -146,7 +146,7 @@ export default function PricingSection() {
 
                 <div>
                   {/* Category & Duration */}
-                  <div className="flex items-center justify-between text-[10px] font-mono tracking-cinematic uppercase text-neutral-500 mb-4">
+                  <div className="flex items-center justify-between text-[10px] font-mono tracking-cinematic uppercase text-neutral-500 mb-3 sm:mb-4">
                     <span>{plan.category}</span>
                     {plan.duration && (
                       <span className="text-neutral-400 font-semibold">{plan.duration}</span>
@@ -154,16 +154,16 @@ export default function PricingSection() {
                   </div>
 
                   {/* Plan Name */}
-                  <h3 className="text-xl font-bold uppercase tracking-wide text-white mb-4">
+                  <h3 className="text-lg sm:text-xl font-bold uppercase tracking-wide text-white mb-3 sm:mb-4">
                     {plan.name}
                   </h3>
 
                   {/* Price */}
-                  <div className="pb-6 mb-6 border-b border-white/[0.08]">
-                    <div className="text-3xl font-extrabold text-white font-mono tracking-tight">
+                  <div className="pb-5 sm:pb-6 mb-5 sm:mb-6 border-b border-white/[0.08]">
+                    <div className="text-2xl sm:text-3xl font-extrabold text-white font-mono tracking-tight">
                       {plan.price}
                     </div>
-                    <span className="text-[10px] font-mono text-neutral-500 uppercase tracking-widest block mt-1">
+                    <span className="text-[9px] sm:text-[10px] font-mono text-neutral-500 uppercase tracking-widest block mt-1">
                       NET PRICE / SESSION
                     </span>
                   </div>

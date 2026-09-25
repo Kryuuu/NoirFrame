@@ -39,16 +39,16 @@ export default function PortfolioGrid({
 
   return (
     <div className="w-full">
-      {/* Category Filter Tabs */}
+      {/* Category Filter Tabs with Mobile Swipe */}
       {enableFiltering && (
-        <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-12 sm:mb-16 border-b border-white/[0.08] pb-6">
+        <div className="flex items-center gap-2 sm:gap-3 mb-8 sm:mb-16 border-b border-white/[0.08] pb-4 sm:pb-6 overflow-x-auto no-scrollbar sm:flex-wrap -mx-6 px-6 sm:mx-0 sm:px-0">
           {FILTER_TABS.map((tab) => {
             const isActive = activeCategory === tab;
             return (
               <button
                 key={tab}
                 onClick={() => setActiveCategory(tab)}
-                className={`text-xs tracking-editorial uppercase px-4 py-2 border transition-all duration-300 ${
+                className={`text-[11px] sm:text-xs tracking-editorial uppercase px-3.5 sm:px-4 py-2 border transition-all duration-300 shrink-0 whitespace-nowrap ${
                   isActive
                     ? 'border-white bg-white text-black font-semibold'
                     : 'border-white/10 text-neutral-400 hover:text-white hover:border-white/30 bg-black/20'
@@ -62,7 +62,7 @@ export default function PortfolioGrid({
       )}
 
       {/* Asymmetric Editorial Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 lg:gap-10">
         {filteredProjects.map((project, index) => {
           // Asymmetric editorial rhythm based on index pattern
           let colSpanClass = 'md:col-span-6';

@@ -14,14 +14,14 @@ export default function FeaturedProject({
   badgeNumber = '01',
 }: FeaturedProjectProps) {
   return (
-    <section className="relative py-24 sm:py-32 bg-[#050505] border-y border-white/[0.08] overflow-hidden">
+    <section className="relative py-16 sm:py-32 bg-[#050505] border-y border-white/[0.08] overflow-hidden">
       {/* Background Frame Lines */}
       <div className="absolute inset-0 pointer-events-none opacity-20">
-        <div className="max-w-7xl mx-auto h-full border-x border-white/[0.06]" />
+        <div className="w-full h-full border-x border-white/[0.06]" />
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+      <div className="w-full px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-24 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
           {/* Large Visual Frame (Left or Dominant) */}
           <div className="lg:col-span-7">
             <Link
@@ -50,7 +50,7 @@ export default function FeaturedProject({
           </div>
 
           {/* Project Information & Narrative (Right) */}
-          <div className="lg:col-span-5 flex flex-col justify-center space-y-6">
+          <div className="lg:col-span-5 flex flex-col justify-center space-y-5 sm:space-y-6">
             <div className="flex items-center gap-3">
               <span className="text-xs font-mono text-neutral-500 tracking-widest">
                 PROJECT {badgeNumber}
@@ -61,20 +61,20 @@ export default function FeaturedProject({
               </span>
             </div>
 
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold uppercase tracking-tight text-white leading-[1.08]">
+            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold uppercase tracking-tight text-white leading-[1.08]">
               {project.title}
             </h2>
 
-            <blockquote className="border-l border-white/20 pl-4 py-1 text-sm sm:text-base text-neutral-300 italic font-light">
+            <blockquote className="border-l border-white/20 pl-4 py-1 text-xs sm:text-base text-neutral-300 italic font-light">
               &ldquo;From atmosphere to emotion, every frame is created to tell a story.&rdquo;
             </blockquote>
 
-            <p className="text-sm text-neutral-400 font-light leading-relaxed">
+            <p className="text-xs sm:text-sm text-neutral-400 font-light leading-relaxed">
               {project.description}
             </p>
 
             {/* Quick Metadata Spec Sheet */}
-            <div className="grid grid-cols-2 gap-4 py-4 border-y border-white/[0.06] text-xs font-mono">
+            <div className="grid grid-cols-2 gap-4 py-3 sm:py-4 border-y border-white/[0.06] text-xs font-mono">
               <div>
                 <span className="text-neutral-500 block text-[10px] tracking-wider uppercase">CLIENT</span>
                 <span className="text-neutral-200">{project.client}</span>
@@ -89,7 +89,7 @@ export default function FeaturedProject({
             <div className="pt-2">
               <Link
                 href={`/work/${project.slug}`}
-                className="inline-flex items-center gap-2 px-6 py-3.5 bg-white text-black font-semibold text-xs tracking-editorial uppercase hover:bg-neutral-200 transition-all group"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-white text-black font-semibold text-xs tracking-editorial uppercase hover:bg-neutral-200 transition-all group"
               >
                 <span>EXPLORE PROJECT</span>
                 <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />

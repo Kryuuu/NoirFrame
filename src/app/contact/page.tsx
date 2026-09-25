@@ -59,7 +59,7 @@ function ContactFormInner() {
   };
 
   return (
-    <div className="p-8 sm:p-12 border border-white/[0.08] bg-[#050505]">
+    <div className="p-5 sm:p-12 border border-white/[0.08] bg-[#050505]">
       {isSubmitted ? (
         <div className="py-16 text-center space-y-6">
           <div className="w-14 h-14 mx-auto rounded-full bg-white/10 flex items-center justify-center text-white border border-white/20">
@@ -238,39 +238,39 @@ function ContactFormInner() {
 
 export default function ContactPage() {
   return (
-    <div className="pt-32 pb-24 bg-[#080808] min-h-screen text-neutral-200">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+    <div className="pt-28 sm:pt-32 pb-14 sm:pb-24 bg-[#080808] min-h-screen text-neutral-200">
+      <div className="w-full px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-24">
         {/* Page Header */}
-        <div className="mb-16 sm:mb-24 pb-10 border-b border-white/[0.08]">
-          <div className="flex items-center gap-2 text-xs font-mono tracking-cinematic uppercase text-neutral-500 mb-4">
+        <div className="mb-10 sm:mb-24 pb-6 sm:pb-10 border-b border-white/[0.08]">
+          <div className="flex items-center gap-2 text-xs font-mono tracking-cinematic uppercase text-neutral-500 mb-3 sm:mb-4">
             <span>INQUIRY</span>
             <span>//</span>
             <span>COMMISSIONS & BOOKINGS</span>
           </div>
 
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold uppercase tracking-tight text-white leading-none">
+          <h1 className="text-3xl sm:text-6xl lg:text-7xl font-extrabold uppercase tracking-tight text-white leading-tight sm:leading-none">
             LET&apos;S WORK
             <br />
             <span className="text-neutral-300 font-light italic">TOGETHER.</span>
           </h1>
 
-          <p className="mt-6 text-sm sm:text-base max-w-2xl font-light text-neutral-400 leading-relaxed">
+          <p className="mt-4 sm:mt-6 text-xs sm:text-base max-w-2xl font-light text-neutral-400 leading-relaxed">
             Booking paket fotografi, videografi, atau ajukan konsep kolaborasi brand Anda. Tim NOIR FRAME akan merespons dalam kurun waktu 24 jam.
           </p>
         </div>
 
         {/* Contact Split Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16">
           {/* Left: Client Inquiry Form wrapped in Suspense */}
           <div className="lg:col-span-8">
-            <Suspense fallback={<div className="p-12 text-neutral-500 font-mono text-xs">LOADING INQUIRY FORM...</div>}>
+            <Suspense fallback={<div className="p-8 text-neutral-500 font-mono text-xs">LOADING INQUIRY FORM...</div>}>
               <ContactFormInner />
             </Suspense>
           </div>
 
           {/* Right: Studio Direct Channels & Location */}
-          <div className="lg:col-span-4 space-y-8">
-            <div className="p-8 border border-white/[0.08] bg-[#050505] space-y-6">
+          <div className="lg:col-span-4 space-y-6 sm:space-y-8">
+            <div className="p-5 sm:p-8 border border-white/[0.08] bg-[#050505] space-y-5 sm:space-y-6">
               <span className="text-xs font-mono tracking-cinematic uppercase text-neutral-500 block">
                 DIRECT COMMISSIONS
               </span>
@@ -281,7 +281,7 @@ export default function ContactPage() {
                 </span>
                 <a
                   href="mailto:hello@noirframe.studio"
-                  className="text-base font-medium text-white hover:underline"
+                  className="text-sm sm:text-base font-medium text-white hover:underline"
                 >
                   hello@noirframe.studio
                 </a>
@@ -300,8 +300,8 @@ export default function ContactPage() {
                 <span className="text-[10px] font-mono tracking-wider uppercase text-neutral-400 block mb-1">
                   OFFICIAL STUDIO LOCATIONS
                 </span>
-                <p className="text-sm text-neutral-300 font-light leading-relaxed">
-                  Jakarta • Bali • Surabaya
+                <p className="text-xs sm:text-sm text-neutral-300 font-light leading-relaxed">
+                  Banjarmasin • Jakarta • Bali
                   <br />
                   <span className="text-xs text-neutral-400">Melayani dokumentasi dalam dan luar kota.</span>
                 </p>
@@ -312,7 +312,7 @@ export default function ContactPage() {
                   JAM KERJA
                 </span>
                 <p className="text-xs font-mono text-neutral-400">
-                  SENIN — JUMAT: 09:00 — 18:00 WIB
+                  SENIN — JUMAT: 09:00 — 18:00 WITA
                   <br />
                   SABTU — MINGGU: PRODUCTION & ON-SET ONLY
                 </p>
@@ -320,7 +320,7 @@ export default function ContactPage() {
             </div>
 
             {/* Price Summary Quick Reference */}
-            <div className="p-8 border border-white/[0.08] bg-[#050505] space-y-4">
+            <div className="p-5 sm:p-8 border border-white/[0.08] bg-[#050505] space-y-4">
               <span className="text-xs font-mono tracking-cinematic uppercase text-neutral-500 block">
                 RINGKASAN PRICELIST
               </span>

@@ -46,7 +46,7 @@ export default function Navbar() {
             : 'bg-transparent py-7'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex items-center justify-between">
+        <div className="w-full px-6 sm:px-8 lg:px-12 xl:px-16 2xl:px-24 flex items-center justify-between">
           {/* Brand Logo */}
           <Link
             href="/"
@@ -106,9 +106,9 @@ export default function Navbar() {
 
       {/* Mobile Fullscreen Editorial Overlay */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 z-40 bg-[#080808] flex flex-col justify-between px-8 py-24 md:hidden border-b border-white/10 animate-fadeIn">
-          <div className="flex flex-col space-y-7 pt-8">
-            <p className="text-[11px] tracking-cinematic text-neutral-500 uppercase">
+        <div className="fixed inset-0 z-40 bg-[#080808]/98 backdrop-blur-xl flex flex-col justify-between px-6 sm:px-8 pt-24 pb-8 md:hidden border-b border-white/10 overflow-y-auto min-h-screen">
+          <div className="flex flex-col space-y-5 pt-4">
+            <p className="text-[10px] font-mono tracking-cinematic text-neutral-500 uppercase">
               // STUDIO NAVIGATION
             </p>
             {NAV_LINKS.map((link, idx) => {
@@ -117,7 +117,7 @@ export default function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`text-2xl font-light tracking-wide transition-colors flex items-center justify-between border-b border-white/[0.06] pb-4 ${
+                  className={`text-xl sm:text-2xl font-light tracking-wide transition-colors flex items-center justify-between border-b border-white/[0.06] pb-3.5 ${
                     isActive ? 'text-white font-normal' : 'text-neutral-400'
                   }`}
                 >
@@ -128,15 +128,15 @@ export default function Navbar() {
             })}
           </div>
 
-          <div className="pt-8 border-t border-white/[0.08] flex flex-col gap-4">
+          <div className="pt-6 mt-6 border-t border-white/[0.08] flex flex-col gap-4">
             <Link
               href="/contact"
               className="w-full text-center text-xs tracking-editorial uppercase py-3.5 bg-white text-black font-semibold hover:bg-neutral-200 transition-colors"
             >
               START A PROJECT
             </Link>
-            <div className="flex justify-between items-center text-[10px] tracking-editorial text-neutral-500 uppercase">
-              <span>JAKARTA • BALI • SURABAYA</span>
+            <div className="flex justify-between items-center text-[10px] font-mono tracking-editorial text-neutral-500 uppercase">
+              <span>BANJARMASIN • JAKARTA • BALI</span>
               <span>EST. 2026</span>
             </div>
           </div>

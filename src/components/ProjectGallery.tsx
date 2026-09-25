@@ -20,18 +20,18 @@ export default function ProjectGallery({ images, title }: ProjectGalleryProps) {
         </span>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-5 sm:gap-8 lg:gap-12">
         {images.map((imgSrc, idx) => {
           // Asymmetric editorial gallery pattern
           let colSpan = 'md:col-span-12';
-          let aspect = 'aspect-[16/10]';
+          let aspect = 'aspect-[4/5] sm:aspect-[16/10]';
 
           if (idx % 3 === 0) {
             colSpan = 'md:col-span-12';
-            aspect = 'aspect-[16/9] sm:aspect-[21/9]';
+            aspect = 'aspect-[16/10] sm:aspect-[21/9]';
           } else if (idx % 3 === 1) {
             colSpan = 'md:col-span-7';
-            aspect = 'aspect-[4/3]';
+            aspect = 'aspect-[4/5] sm:aspect-[4/3]';
           } else {
             colSpan = 'md:col-span-5';
             aspect = 'aspect-[4/5]';
@@ -57,8 +57,8 @@ export default function ProjectGallery({ images, title }: ProjectGalleryProps) {
                 <div className="absolute bottom-2 left-2 w-2 h-2 border-b border-l border-white/40 pointer-events-none" />
                 <div className="absolute bottom-2 right-2 w-2 h-2 border-b border-r border-white/40 pointer-events-none" />
 
-                {/* Plate watermark */}
-                <div className="absolute bottom-3 left-3 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                {/* Plate watermark (subtle on mobile, interactive on desktop) */}
+                <div className="absolute bottom-3 left-3 z-10 opacity-70 sm:opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <span className="text-[9px] tracking-cinematic uppercase font-mono px-2 py-1 bg-black/70 backdrop-blur-sm text-neutral-300 border border-white/10">
                     PLATE // {String(idx + 1).padStart(2, '0')}
                   </span>

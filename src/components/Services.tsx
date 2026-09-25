@@ -48,25 +48,25 @@ export default function Services() {
   const [activeIdx, setActiveIdx] = useState<number>(0);
 
   return (
-    <section className="relative py-28 sm:py-36 bg-[#080808] border-b border-white/[0.08] overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
+    <section className="relative py-16 sm:py-36 bg-[#080808] border-b border-white/[0.08] overflow-hidden">
+      <div className="w-full px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-24 relative z-10">
         {/* Section Header */}
-        <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-16 sm:mb-20 pb-8 border-b border-white/[0.08] gap-6">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-10 sm:mb-20 pb-6 sm:pb-8 border-b border-white/[0.08] gap-4 sm:gap-6">
           <div>
-            <span className="text-xs font-mono tracking-cinematic uppercase text-neutral-500 block mb-3">
+            <span className="text-xs font-mono tracking-cinematic uppercase text-neutral-500 block mb-2 sm:mb-3">
               // CORE DISCIPLINES
             </span>
-            <h2 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold uppercase tracking-tight text-white">
+            <h2 className="text-2xl sm:text-5xl lg:text-6xl font-extrabold uppercase tracking-tight text-white">
               WHAT WE DO
             </h2>
           </div>
-          <p className="text-sm text-neutral-400 max-w-sm font-light">
+          <p className="text-xs sm:text-sm text-neutral-400 max-w-sm font-light">
             We operate at the intersection of photographic art and cinematic precision to articulate your story.
           </p>
         </div>
 
         {/* Editorial Split Layout: Left is Service List, Right is Interactive Visual Preview */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
           {/* Services List */}
           <div className="lg:col-span-7 divide-y divide-white/[0.08]">
             {SERVICES_DATA.map((service, index) => {
@@ -75,41 +75,41 @@ export default function Services() {
                 <div
                   key={service.number}
                   onMouseEnter={() => setActiveIdx(index)}
-                  className={`group py-8 sm:py-10 transition-all duration-300 cursor-pointer ${
-                    isHovered ? 'bg-white/[0.02] pl-4 sm:pl-6' : 'pl-0'
+                  className={`group py-6 sm:py-10 transition-all duration-300 cursor-pointer ${
+                    isHovered ? 'bg-white/[0.02] sm:pl-6' : 'pl-0'
                   }`}
                 >
-                  <div className="flex items-baseline justify-between mb-3">
-                    <div className="flex items-baseline gap-4 sm:gap-6">
+                  <div className="flex items-baseline justify-between mb-2 sm:mb-3">
+                    <div className="flex items-baseline gap-3 sm:gap-6">
                       <span className="text-xs font-mono text-neutral-500 tracking-wider">
                         {service.number}
                       </span>
                       <h3
-                        className={`text-2xl sm:text-3xl lg:text-4xl font-bold uppercase tracking-tight transition-colors ${
-                          isHovered ? 'text-white' : 'text-neutral-400 group-hover:text-white'
+                        className={`text-xl sm:text-3xl lg:text-4xl font-bold uppercase tracking-tight transition-colors ${
+                          isHovered ? 'text-white' : 'text-neutral-300 sm:text-neutral-400 group-hover:text-white'
                         }`}
                       >
                         {service.title}
                       </h3>
                     </div>
                     <ArrowUpRight
-                      className={`w-5 h-5 transition-transform duration-300 ${
+                      className={`w-4 sm:w-5 h-4 sm:h-5 transition-transform duration-300 ${
                         isHovered
                           ? 'text-white translate-x-1 -translate-y-1'
-                          : 'text-neutral-600 opacity-40'
+                          : 'text-neutral-600 opacity-60'
                       }`}
                     />
                   </div>
 
-                  <p className="text-sm text-neutral-400 max-w-xl font-light leading-relaxed pl-8 sm:pl-12">
+                  <p className="text-xs sm:text-sm text-neutral-400 max-w-xl font-light leading-relaxed pl-0 sm:pl-12">
                     {service.description}
                   </p>
 
-                  <div className="flex flex-wrap gap-2 mt-4 pl-8 sm:pl-12">
+                  <div className="flex flex-wrap gap-1.5 sm:gap-2 mt-3 sm:mt-4 pl-0 sm:pl-12">
                     {service.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="text-[10px] tracking-editorial uppercase px-2.5 py-1 bg-white/[0.04] text-neutral-400 border border-white/[0.06]"
+                        className="text-[9px] sm:text-[10px] tracking-editorial uppercase px-2 sm:px-2.5 py-0.5 sm:py-1 bg-white/[0.04] text-neutral-400 border border-white/[0.06]"
                       >
                         {tag}
                       </span>

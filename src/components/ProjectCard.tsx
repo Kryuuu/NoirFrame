@@ -58,30 +58,33 @@ export default function ProjectCard({
           </div>
         )}
 
-        {/* Hover View Project CTA */}
-        <div className="absolute bottom-4 right-4 z-10 translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 flex items-center gap-1.5 text-[11px] tracking-editorial uppercase text-white font-medium bg-black/70 backdrop-blur-sm px-3 py-1.5 border border-white/20">
+        {/* Hover View Project CTA for desktop */}
+        <div className="hidden sm:flex absolute bottom-4 right-4 z-10 translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 items-center gap-1.5 text-[11px] tracking-editorial uppercase text-white font-medium bg-black/70 backdrop-blur-sm px-3 py-1.5 border border-white/20">
           <span>VIEW PROJECT</span>
           <ArrowUpRight className="w-3.5 h-3.5" />
         </div>
       </div>
 
       {/* Project Meta Information */}
-      <div className="p-5 sm:p-6 bg-[#0a0a0a] border-t border-white/[0.06] flex items-start justify-between gap-4">
-        <div>
-          <div className="flex items-center gap-2 text-[10px] tracking-cinematic text-neutral-500 uppercase font-mono mb-1.5">
+      <div className="p-4 sm:p-6 bg-[#0a0a0a] border-t border-white/[0.06] flex items-start justify-between gap-3 sm:gap-4">
+        <div className="flex-1 min-w-0">
+          <div className="flex items-center gap-2 text-[10px] tracking-cinematic text-neutral-500 uppercase font-mono mb-1.5 truncate">
             <span>{project.serviceType}</span>
             <span>•</span>
             <span>{project.location}</span>
           </div>
-          <h3 className="text-base sm:text-lg font-bold tracking-wide text-white uppercase group-hover:text-neutral-200 transition-colors">
-            {project.title}
-          </h3>
+          <div className="flex items-center justify-between gap-2">
+            <h3 className="text-sm sm:text-lg font-bold tracking-wide text-white uppercase group-hover:text-neutral-200 transition-colors truncate">
+              {project.title}
+            </h3>
+            <ArrowUpRight className="w-4 h-4 text-neutral-500 sm:hidden shrink-0 group-hover:text-white transition-colors" />
+          </div>
           <p className="mt-1 text-xs text-neutral-400 line-clamp-2 font-light">
             {project.description}
           </p>
         </div>
 
-        <div className="text-right shrink-0">
+        <div className="text-right shrink-0 hidden sm:block">
           <span className="text-xs font-mono text-neutral-500 block">
             {project.year}
           </span>
