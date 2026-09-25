@@ -13,10 +13,10 @@ export default function ProjectGallery({ images, title }: ProjectGalleryProps) {
     <div className="space-y-12 sm:space-y-16">
       <div className="flex items-center justify-between border-b border-white/[0.08] pb-4">
         <h3 className="text-xs font-mono tracking-cinematic uppercase text-neutral-400">
-          EDITORIAL ARCHIVE // {images.length} FRAMES
+          ARSIP FOTO // {images.length} BINGKAI
         </h3>
         <span className="text-[10px] tracking-editorial uppercase text-neutral-600">
-          INTENTIONAL FRAMING • UNALTERED ASPECT
+          PEMBINGKAIAN INTENSIONAL • RESOLUSI ASLI
         </span>
       </div>
 

@@ -40,28 +40,28 @@ export default function ProjectCard({
           className="object-cover object-center transform scale-100 group-hover:scale-105 transition-transform duration-700 ease-out"
         />
 
-        {/* Subtle Frame Corner Marks */}
-        <div className="absolute top-2 left-2 w-2.5 h-2.5 border-t border-l border-white/40 pointer-events-none" />
-        <div className="absolute top-2 right-2 w-2.5 h-2.5 border-t border-r border-white/40 pointer-events-none" />
-        <div className="absolute bottom-2 left-2 w-2.5 h-2.5 border-b border-l border-white/40 pointer-events-none" />
-        <div className="absolute bottom-2 right-2 w-2.5 h-2.5 border-b border-r border-white/40 pointer-events-none" />
+        {/* Reactive Viewfinder Corner Brackets that expand on hover */}
+        <div className="absolute top-2.5 left-2.5 w-3 h-3 border-t-2 border-l-2 border-white/40 pointer-events-none group-hover:border-white group-hover:-translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300" />
+        <div className="absolute top-2.5 right-2.5 w-3 h-3 border-t-2 border-r-2 border-white/40 pointer-events-none group-hover:border-white group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300" />
+        <div className="absolute bottom-2.5 left-2.5 w-3 h-3 border-b-2 border-l-2 border-white/40 pointer-events-none group-hover:border-white group-hover:-translate-x-0.5 group-hover:translate-y-0.5 transition-all duration-300" />
+        <div className="absolute bottom-2.5 right-2.5 w-3 h-3 border-b-2 border-r-2 border-white/40 pointer-events-none group-hover:border-white group-hover:translate-x-0.5 group-hover:translate-y-0.5 transition-all duration-300" />
 
         {/* Gradient Overlay for hover contrast */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-40 group-hover:opacity-80 transition-opacity duration-300" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent opacity-40 group-hover:opacity-75 transition-opacity duration-500" />
 
         {/* Floating Category Badge */}
         {showCategoryBadge && (
           <div className="absolute top-4 left-4 z-10">
-            <span className="text-[10px] tracking-cinematic uppercase px-2.5 py-1 bg-black/60 backdrop-blur-md text-neutral-300 border border-white/10">
+            <span className="text-[10px] tracking-cinematic uppercase px-2.5 py-1 bg-black/60 backdrop-blur-md text-neutral-300 border border-white/10 group-hover:border-white/30 transition-colors">
               {project.category}
             </span>
           </div>
         )}
 
         {/* Hover View Project CTA for desktop */}
-        <div className="hidden sm:flex absolute bottom-4 right-4 z-10 translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 items-center gap-1.5 text-[11px] tracking-editorial uppercase text-white font-medium bg-black/70 backdrop-blur-sm px-3 py-1.5 border border-white/20">
-          <span>VIEW PROJECT</span>
-          <ArrowUpRight className="w-3.5 h-3.5" />
+        <div className="hidden sm:flex absolute bottom-4 right-4 z-10 translate-y-3 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-out items-center gap-1.5 text-[11px] tracking-editorial uppercase text-white font-medium bg-black/80 backdrop-blur-md px-3.5 py-1.5 border border-white/30 shadow-lg">
+          <span>LIHAT KARYA</span>
+          <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
         </div>
       </div>
 

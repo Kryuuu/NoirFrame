@@ -58,7 +58,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
           className="inline-flex items-center gap-2 text-xs font-mono tracking-cinematic uppercase text-neutral-400 hover:text-white transition-colors group"
         >
           <ArrowLeft className="w-3.5 h-3.5 group-hover:-translate-x-1 transition-transform" />
-          <span>BACK TO ARCHIVE</span>
+          <span>KEMBALI KE ARSIP</span>
         </Link>
       </div>
 
@@ -81,25 +81,25 @@ export default async function ProjectDetailPage({ params }: PageProps) {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 pt-5 sm:pt-6 border-t border-white/[0.08] text-xs font-mono">
             <div>
               <span className="text-neutral-500 block uppercase text-[9px] sm:text-[10px] tracking-wider mb-1">
-                CLIENT
+                KLIEN
               </span>
               <span className="text-white font-medium">{project.client}</span>
             </div>
             <div>
               <span className="text-neutral-500 block uppercase text-[9px] sm:text-[10px] tracking-wider mb-1">
-                LOCATION
+                LOKASI
               </span>
               <span className="text-white font-medium">{project.location}</span>
             </div>
             <div>
               <span className="text-neutral-500 block uppercase text-[9px] sm:text-[10px] tracking-wider mb-1">
-                YEAR
+                TAHUN
               </span>
               <span className="text-white font-medium">{project.year}</span>
             </div>
             <div>
               <span className="text-neutral-500 block uppercase text-[9px] sm:text-[10px] tracking-wider mb-1">
-                DISCIPLINE
+                DISIPLIN
               </span>
               <span className="text-white font-medium">{project.serviceType}</span>
             </div>
@@ -140,16 +140,16 @@ export default async function ProjectDetailPage({ params }: PageProps) {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16">
           <div className="lg:col-span-4">
             <span className="text-xs font-mono tracking-cinematic uppercase text-neutral-500 block mb-2 sm:mb-3">
-              // CONCEPT & INTENTION
+              // KONSEP & INTENSI
             </span>
             <h2 className="text-2xl sm:text-3xl font-bold uppercase tracking-tight text-white">
-              THE STORY
+              CERITA KARYA
             </h2>
             
             {project.deliverables && project.deliverables.length > 0 && (
               <div className="mt-8 pt-6 border-t border-white/[0.08]">
                 <span className="text-[10px] font-mono tracking-cinematic uppercase text-neutral-500 block mb-3">
-                  DELIVERABLES
+                  LUARAN KARYA
                 </span>
                 <ul className="space-y-2 text-xs font-mono text-neutral-300">
                   {project.deliverables.map((item, idx) => (
@@ -187,7 +187,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
           <div className="p-5 sm:p-12 border border-white/[0.08] bg-[#050505]">
             <div className="flex items-center gap-2 text-xs font-mono tracking-cinematic uppercase text-neutral-500 mb-5 sm:mb-6">
               <Film className="w-3.5 h-3.5" />
-              <span>PRODUCTION CREDITS</span>
+              <span>KREDIT PRODUKSI</span>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 text-xs font-mono">
@@ -210,7 +210,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
             <div>
               <span className="text-[10px] sm:text-xs font-mono tracking-cinematic uppercase text-neutral-500 block mb-1 sm:mb-2">
-                NEXT ARCHIVE //
+                ARSIP BERIKUTNYA //
               </span>
               <h3 className="text-xl sm:text-4xl font-extrabold uppercase tracking-tight text-white hover:text-neutral-300 transition-colors">
                 <Link href={`/work/${nextProject.slug}`}>
@@ -223,7 +223,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
               href={`/work/${nextProject.slug}`}
               className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-6 sm:px-8 py-3.5 sm:py-4 bg-white text-black font-semibold text-xs tracking-cinematic uppercase hover:bg-neutral-200 transition-all group shrink-0"
             >
-              <span>EXPLORE NEXT</span>
+              <span>JELAJAHI KARYA</span>
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>

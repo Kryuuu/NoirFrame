@@ -10,6 +10,8 @@ import AboutSection from '@/components/AboutSection';
 import Process from '@/components/Process';
 import Clients from '@/components/Clients';
 import CTASection from '@/components/CTASection';
+import FilmstripTicker from '@/components/FilmstripTicker';
+import MotionReveal from '@/components/MotionReveal';
 import { getAllProjects, getFeaturedProjects } from '@/data/portfolio';
 
 export default function HomePage() {
@@ -22,73 +24,92 @@ export default function HomePage() {
 
   return (
     <div className="w-full">
-      {/* 1. Cinematic Fullscreen Hero */}
+      {/* 1. Cinematic Fullscreen Hero with Parallax */}
       <Hero />
+
+      {/* Dynamic 35mm Infinite Filmstrip Ribbon */}
+      <FilmstripTicker />
 
       {/* 2. Selected Work Section */}
       <section id="selected-work" className="py-16 sm:py-36 bg-[#080808] relative">
         <div className="w-full px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-24">
-          {/* Section Header */}
-          <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 sm:mb-20 pb-6 sm:pb-8 border-b border-white/[0.08] gap-4 sm:gap-6">
-            <div>
-              <span className="text-xs font-mono tracking-cinematic uppercase text-neutral-500 block mb-2 sm:mb-3">
-                // ARCHIVE CURATION
-              </span>
-              <h2 className="text-2xl sm:text-5xl lg:text-6xl font-extrabold uppercase tracking-tight text-white">
-                SELECTED WORK
-              </h2>
+          {/* Section Header with Smooth Entrance */}
+          <MotionReveal animation="fade-up" duration={700}>
+            <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 sm:mb-20 pb-6 sm:pb-8 border-b border-white/[0.08] gap-4 sm:gap-6">
+              <div>
+                <span className="text-xs font-mono tracking-cinematic uppercase text-neutral-500 block mb-2 sm:mb-3">
+                  // KURASI ARSIP
+                </span>
+                <h2 className="text-2xl sm:text-5xl lg:text-6xl font-extrabold uppercase tracking-tight text-white">
+                  KARYA PILIHAN
+                </h2>
+              </div>
+              <div className="text-left md:text-right">
+                <p className="text-xs sm:text-sm text-neutral-400 max-w-sm font-light">
+                  Koleksi cerita, momen berharga, dan estetika visual yang telah kami abadikan.
+                </p>
+                <Link
+                  href="/work"
+                  className="inline-flex items-center gap-1.5 text-xs tracking-editorial uppercase text-neutral-300 hover:text-white mt-3 sm:mt-4 transition-colors group"
+                >
+                  <span>LIHAT SEMUA ARSIP</span>
+                  <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                </Link>
+              </div>
             </div>
-            <div className="text-left md:text-right">
-              <p className="text-xs sm:text-sm text-neutral-400 max-w-sm font-light">
-                A selection of stories, moments, and visual identities we&apos;ve captured.
-              </p>
-              <Link
-                href="/work"
-                className="inline-flex items-center gap-1.5 text-xs tracking-editorial uppercase text-neutral-300 hover:text-white mt-3 sm:mt-4 transition-colors group"
-              >
-                <span>EXPLORE ALL ARCHIVES</span>
-                <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-              </Link>
-            </div>
-          </div>
+          </MotionReveal>
 
           {/* Editorial Asymmetrical Portfolio Grid */}
           <PortfolioGrid projects={selectedProjects} enableFiltering={false} />
 
           {/* Bottom View All Link */}
-          <div className="mt-10 sm:mt-16 text-center">
-            <Link
-              href="/work"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-6 sm:px-8 py-3.5 sm:py-4 border border-white/20 text-xs tracking-cinematic uppercase text-white hover:bg-white hover:text-black hover:border-white transition-all group"
-            >
-              <span>VIEW FULL PORTFOLIO ARCHIVE</span>
-              <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-            </Link>
-          </div>
+          <MotionReveal animation="fade-up" delay={200} duration={600}>
+            <div className="mt-10 sm:mt-16 text-center">
+              <Link
+                href="/work"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-6 sm:px-8 py-3.5 sm:py-4 border border-white/20 text-xs tracking-cinematic uppercase text-white hover:bg-white hover:text-black hover:border-white transition-all group"
+              >
+                <span>LIHAT SEMUA PORTOFOLIO</span>
+                <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+              </Link>
+            </div>
+          </MotionReveal>
         </div>
       </section>
 
       {/* 3. Featured Showcase Project */}
       {heroFeatured && (
-        <FeaturedProject project={heroFeatured} badgeNumber="01" />
+        <MotionReveal animation="fade-up" duration={800}>
+          <FeaturedProject project={heroFeatured} badgeNumber="01" />
+        </MotionReveal>
       )}
 
       {/* 4. What We Do (Editorial Services with interactive hover preview) */}
-      <Services />
+      <MotionReveal animation="fade-up" duration={800}>
+        <Services />
+      </MotionReveal>
 
       {/* 5. Pricelist & Investment Rates */}
-      <PricingSection />
+      <MotionReveal animation="fade-up" duration={800}>
+        <PricingSection />
+      </MotionReveal>
 
       {/* 6. About NOIR FRAME */}
-      <AboutSection />
+      <MotionReveal animation="fade-up" duration={800}>
+        <AboutSection />
+      </MotionReveal>
 
-      {/* 6. From Idea To Frame (4-Step Process) */}
-      <Process />
+      {/* 7. From Idea To Frame (4-Step Process) */}
+      <MotionReveal animation="fade-up" duration={800}>
+        <Process />
+      </MotionReveal>
 
-      {/* 7. Selected Clients */}
-      <Clients />
+      {/* 8. Selected Clients */}
+      <MotionReveal animation="fade-up" duration={800}>
+        <Clients />
+      </MotionReveal>
 
-      {/* 8. Large Typography CTA */}
+      {/* 9. Large Typography CTA */}
       <CTASection />
     </div>
   );

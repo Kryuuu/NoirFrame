@@ -15,24 +15,24 @@ export default function AboutSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
           {/* Large Photographic Showcase Visual */}
           <div className="lg:col-span-6 order-2 lg:order-1">
-            <div className="relative aspect-[4/5] border border-white/20 bg-[#0d0d0d] overflow-hidden">
+            <div className="group relative aspect-[4/5] border border-white/20 bg-[#0d0d0d] overflow-hidden hover:border-white/40 transition-colors duration-500">
               <Image
                 src="/porto/portrait/portrait-02.jpg"
                 alt="NOIR FRAME Creative Studio Work"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover"
+                className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
               />
 
-              {/* Viewfinder crosshairs */}
-              <div className="absolute top-3 left-3 w-3 h-3 border-t-2 border-l-2 border-white/80" />
-              <div className="absolute top-3 right-3 w-3 h-3 border-t-2 border-r-2 border-white/80" />
-              <div className="absolute bottom-3 left-3 w-3 h-3 border-b-2 border-l-2 border-white/80" />
-              <div className="absolute bottom-3 right-3 w-3 h-3 border-b-2 border-r-2 border-white/80" />
+              {/* Viewfinder crosshairs that expand on hover */}
+              <div className="absolute top-3 left-3 w-3.5 h-3.5 border-t-2 border-l-2 border-white/80 group-hover:-translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
+              <div className="absolute top-3 right-3 w-3.5 h-3.5 border-t-2 border-r-2 border-white/80 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
+              <div className="absolute bottom-3 left-3 w-3.5 h-3.5 border-b-2 border-l-2 border-white/80 group-hover:-translate-x-0.5 group-hover:translate-y-0.5 transition-transform duration-300" />
+              <div className="absolute bottom-3 right-3 w-3.5 h-3.5 border-b-2 border-r-2 border-white/80 group-hover:translate-x-0.5 group-hover:translate-y-0.5 transition-transform duration-300" />
 
               {/* Studio Plate Badge */}
               <div className="absolute bottom-4 left-4 z-10 p-2.5 sm:p-3 bg-black/80 backdrop-blur-md border border-white/10 text-[9px] sm:text-[10px] font-mono tracking-cinematic uppercase text-neutral-300">
-                STUDIO ARCHIVE // 35MM OPTICS
+                ARSIP STUDIO // OPTIK 35MM
               </div>
             </div>
           </div>
@@ -41,10 +41,10 @@ export default function AboutSection() {
           <div className="lg:col-span-6 order-1 lg:order-2 flex flex-col justify-center space-y-6 sm:space-y-8">
             <div>
               <span className="text-xs font-mono tracking-cinematic uppercase text-neutral-500 block mb-2 sm:mb-3">
-                // MANIFESTO & IDENTITY
+                // MANIFESTO & IDENTITAS
               </span>
               <h2 className="text-2xl sm:text-5xl lg:text-6xl font-extrabold uppercase tracking-tight text-white leading-[1.06]">
-                ABOUT
+                TENTANG
                 <br />
                 NOIR FRAME
               </h2>
@@ -52,13 +52,13 @@ export default function AboutSection() {
 
             <div className="space-y-4 sm:space-y-5 text-xs sm:text-base text-neutral-300 font-light leading-relaxed">
               <p>
-                NOIR FRAME is a visual creative studio focused on photography, videography, and visual storytelling.
+                NOIR FRAME adalah studio kreatif visual yang berdedikasi pada fotografi, videografi sinematik, dan penceritaan visual bernyawa.
               </p>
               <p className="text-neutral-400">
-                We believe a strong image is more than something that looks good. It should carry atmosphere, emotion, identity, and meaning.
+                Kami percaya sebuah karya visual sejati lebih dari sekadar gambar yang indah. Karya harus memiliki atmosfer, getaran emosi, identitas, dan makna yang abadi.
               </p>
               <p className="text-neutral-400">
-                From intimate moments to large-scale productions, we approach every project with a balance of creativity, precision, and intention.
+                Dari momen personal berharga hingga produksi komersial dan event berskala besar, kami mengeksekusi setiap proyek dengan perpaduan kepekaan artistik, presisi teknis, dan intensi yang tulus.
               </p>
             </div>
 
@@ -66,26 +66,26 @@ export default function AboutSection() {
             <div className="grid grid-cols-3 gap-3 sm:gap-6 pt-5 sm:pt-6 border-t border-white/[0.08]">
               <div>
                 <span className="text-xl sm:text-3xl font-extrabold text-white font-mono block">
-                  XX+
+                  100+
                 </span>
                 <span className="text-[9px] sm:text-xs tracking-cinematic uppercase text-neutral-500 font-mono mt-1 block">
-                  PROJECTS
+                  PROYEK TUNTAS
                 </span>
               </div>
               <div>
                 <span className="text-xl sm:text-3xl font-extrabold text-white font-mono block">
-                  XX+
+                  80+
                 </span>
                 <span className="text-[9px] sm:text-xs tracking-cinematic uppercase text-neutral-500 font-mono mt-1 block">
-                  CLIENTS
+                  KLIEN KREATIF
                 </span>
               </div>
               <div>
                 <span className="text-xl sm:text-3xl font-extrabold text-white font-mono block">
-                  20XX
+                  2023
                 </span>
                 <span className="text-[9px] sm:text-xs tracking-cinematic uppercase text-neutral-500 font-mono mt-1 block">
-                  — PRESENT
+                  — SEKARANG
                 </span>
               </div>
             </div>
@@ -96,7 +96,7 @@ export default function AboutSection() {
                 href="/about"
                 className="inline-flex items-center gap-2 text-xs tracking-editorial uppercase text-white hover:text-neutral-300 border-b border-white/40 pb-1 hover:border-white transition-all group"
               >
-                <span>READ COMPLETE STUDIO PROFILE</span>
+                <span>BACA PROFIL STUDIO LENGKAP</span>
                 <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
               </Link>
             </div>

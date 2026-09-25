@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, MessageCircle } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -21,23 +21,45 @@ export default function Footer() {
                 </h2>
               </Link>
               <p className="mt-3 sm:mt-4 text-xs tracking-editorial uppercase text-neutral-400 max-w-md">
-                Photography / Videography / Creative Production / Visual Storytelling
+                Fotografi / Videografi / Produksi Kreatif / Visual Storytelling
               </p>
               <p className="mt-3 sm:mt-4 text-xs sm:text-sm text-neutral-500 max-w-md leading-relaxed font-light">
-                A visual creative studio crafting cinematic narratives, commercial campaigns, and timeless documentation with intention and geometric precision.
+                Studio kreatif visual yang merancang narasi sinematik, kampanye komersial, dan dokumentasi bernilai abadi dengan intensi kuat serta presisi optik.
               </p>
             </div>
 
-            <div className="mt-6 sm:mt-8 pt-5 sm:pt-6 border-t border-white/[0.05]">
-              <span className="text-[10px] sm:text-[11px] tracking-editorial uppercase text-neutral-600 block">
-                INQUIRIES & COMMISSIONS
+            <div className="mt-6 sm:mt-8 pt-5 sm:pt-6 border-t border-white/[0.05] space-y-2">
+              <span className="text-[10px] sm:text-[11px] tracking-editorial uppercase text-neutral-500 block mb-2">
+                WHATSAPP & KONSULTASI PROYEK
               </span>
-              <a
-                href="mailto:hello@noirframe.studio"
-                className="text-xs sm:text-sm font-medium text-white hover:text-neutral-300 transition-colors inline-block mt-1"
-              >
-                hello@noirframe.studio
-              </a>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 text-xs font-mono">
+                <a
+                  href="https://wa.me/6281913715220"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1.5 text-neutral-300 hover:text-emerald-400 transition-colors"
+                >
+                  <MessageCircle className="w-3.5 h-3.5 text-emerald-400" />
+                  <span>ADMIN 1: +62 819-1371-5220</span>
+                </a>
+                <a
+                  href="https://wa.me/6281257436797"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1.5 text-neutral-300 hover:text-emerald-400 transition-colors"
+                >
+                  <MessageCircle className="w-3.5 h-3.5 text-emerald-400" />
+                  <span>ADMIN 2: +62 812-5743-6797</span>
+                </a>
+              </div>
+              <div className="pt-2">
+                <a
+                  href="mailto:hello@noirframe.studio"
+                  className="text-xs font-mono text-neutral-400 hover:text-white transition-colors"
+                >
+                  hello@noirframe.studio
+                </a>
+              </div>
             </div>
           </div>
 
@@ -46,32 +68,32 @@ export default function Footer() {
             {/* Navigation Links */}
             <div>
               <h3 className="text-xs font-semibold tracking-cinematic uppercase text-white mb-4 sm:mb-6">
-                NAVIGATION
+                NAVIGASI
               </h3>
               <ul className="space-y-2.5 sm:space-y-3.5 text-xs tracking-editorial uppercase">
                 <li>
                   <Link href="/work" className="hover:text-white transition-colors">
-                    WORK
+                    PORTOFOLIO
                   </Link>
                 </li>
                 <li>
                   <Link href="/services" className="hover:text-white transition-colors">
-                    SERVICES
+                    LAYANAN
                   </Link>
                 </li>
                 <li>
                   <Link href="/about" className="hover:text-white transition-colors">
-                    ABOUT
+                    TENTANG KAMI
                   </Link>
                 </li>
                 <li>
                   <Link href="/process" className="hover:text-white transition-colors">
-                    PROCESS
+                    ALUR PROSES
                   </Link>
                 </li>
                 <li>
                   <Link href="/contact" className="hover:text-white transition-colors">
-                    CONTACT
+                    KONTAK WHATSAPP
                   </Link>
                 </li>
               </ul>
@@ -80,7 +102,7 @@ export default function Footer() {
             {/* Social Links */}
             <div>
               <h3 className="text-xs font-semibold tracking-cinematic uppercase text-white mb-4 sm:mb-6">
-                CONNECT
+                MEDIA SOSIAL
               </h3>
               <ul className="space-y-2.5 sm:space-y-3.5 text-xs tracking-editorial uppercase">
                 <li>
@@ -135,11 +157,11 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-6 sm:pt-8 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 sm:gap-4 text-[10px] sm:text-[11px] tracking-editorial uppercase text-neutral-600">
           <div>
-            © 2026 NOIR FRAME. ALL RIGHTS RESERVED.
+            © 2026 NOIR FRAME. HAK CIPTA DILINDUNGI.
           </div>
           <div className="flex items-center gap-4 sm:gap-6 font-mono text-[9px] sm:text-[10px]">
-            <span>INDONESIA / COMMISSIONS</span>
-            <span>FRAME NO. 26-09</span>
+            <span>INDONESIA // STUDIO KREATIF</span>
+            <span>BINGKAI NO. 26-09</span>
           </div>
         </div>
       </div>

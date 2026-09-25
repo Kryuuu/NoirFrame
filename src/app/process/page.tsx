@@ -5,62 +5,62 @@ import { ArrowUpRight, CheckCircle2 } from 'lucide-react';
 import CTASection from '@/components/CTASection';
 
 export const metadata: Metadata = {
-  title: 'Our Production Process — NOIR FRAME',
+  title: 'Alur Kerja Produksi — NOIR FRAME',
   description:
-    'Discover the 4-phase creative methodology of NOIR FRAME: from initial concept exploration to master delivery.',
+    'Pelajari metodologi kreatif 4 tahap NOIR FRAME: dari eksplorasi konsep hingga penyerahan hasil akhir.',
 };
 
 const PHASES = [
   {
     step: '01',
-    name: 'DISCOVER',
-    subtitle: 'IMMERSION & ALIGNMENT',
+    name: 'EKSPLORASI',
+    subtitle: 'DIALOG & PENYELARASAN ESTETIKA',
     description:
-      'Every project commences with deep listening. We decode your narrative ambitions, brand identity, audience emotional resonance, and project milestones.',
+      'Setiap karya bermula dari dialog yang seksama. Kami mendalami visi cerita, identitas brand, kehangatan emosi yang ingin disampaikan, serta jadwal penting momen Anda.',
     steps: [
-      'Narrative & Brand Ideation Call',
-      'Target Audience & Aesthetic Research',
-      'Location & Logistical Feasibility Review',
-      'Formal Scope & Production Roadmap',
+      'Sesi Diskusi Konsep & Visi Visual',
+      'Riset Estetika & Referensi Moodboard',
+      'Peninjauan Lokasi & Kelayakan Logistik',
+      'Penetapan Ruang Lingkup & Jadwal Sesi',
     ],
   },
   {
     step: '02',
-    name: 'CREATE',
-    subtitle: 'CONCEPT & PRE-PRODUCTION',
+    name: 'PERENCANAAN',
+    subtitle: 'KONSEP & PRA-PRODUKSI',
     description:
-      'We formulate the creative blueprint. From cinematic treatments and moodboards to shotlists, lighting schematics, and equipment configuration.',
+      'Kami merumuskan cetak biru kreatif. Dari treatment visual dan moodboard terarah hingga shot list, tata cahaya, dan pemilihan peralatan kamera presisi.',
     steps: [
-      'Visual Treatment & Director’s Deck',
-      'Shot-by-Shot Storyboard & Framing Guides',
-      'Styling, Prop & Set Design Coordination',
-      'Crew & Specialized Camera Equipment Prep',
+      'Treatment Visual & Panduan Gaya',
+      'Shot-by-Shot Storyboard & Panduan Angle',
+      'Koordinasi Kostum, Properti & Lokasi',
+      'Persiapan Kru & Kalibrasi Peralatan Sesi',
     ],
   },
   {
     step: '03',
-    name: 'CAPTURE',
-    subtitle: 'PRINCIPAL PHOTOGRAPHY & PRODUCTION',
+    name: 'PRODUKSI',
+    subtitle: 'SESI PEMOTRETAN & PENGAMBILAN GAMBAR',
     description:
-      'On set or on location, our crew executes with calm authority and intentional framing. We harness natural light, chiaroscuro contrast, and cinema optics.',
+      'Di lokasi pemotretan, kru kami bekerja dengan arahan gaya yang tenang dan pembingkaian penuh intensi. Kami memanfaatkan cahaya alami, kontras dramatis, dan optik bioskop.',
     steps: [
-      'On-Set Art Direction & Real-Time Monitoring',
-      'High-Speed Tracking & Anamorphic Filming',
-      'Intimate Documentarian Wedding Coverage',
-      'On-Site Dual Checksum Data Archival',
+      'Pengarahan Gaya Alami & Pemantauan Real-Time',
+      'Perekaman Sinematik & Foto High-Resolution',
+      'Dokumentasi Dokumenter Momen Spontan',
+      'Pencadangan Ganda Data Aman di Lokasi',
     ],
   },
   {
     step: '04',
-    name: 'DELIVER',
-    subtitle: 'POST-PRODUCTION & MASTERING',
+    name: 'PENYERAHAN',
+    subtitle: 'PASCAPRODUKSI & SERAH TERIMA MASTER',
     description:
-      'Refining every frame. We execute offline cutting, precision color grading in cinema color science, bespoke audio mastering, and archival delivery.',
+      'Penyempurnaan setiap frame. Kami melakukan seleksi kurasi, master color grading berstandar sinema, penataan audio khusus, dan penyerahan arsip digital aman.',
     steps: [
-      'Director’s Cut & Collaborative Review',
-      'ACES Cinema Master Color Grading',
-      'Original Score & Sound Design Integration',
-      'High-Res Archival Masters & Web Cutdowns',
+      'Kurasi Foto Terbaik & Editing Video',
+      'Master Color Grading Khas NOIR FRAME',
+      'Sinkronisasi Musik & Desain Tata Suara',
+      'Penyerahan File Resolusi Penuh & Galeri Cloud',
     ],
   },
 ];
@@ -72,19 +72,19 @@ export default function ProcessPage() {
         {/* Header */}
         <div className="mb-10 sm:mb-28 pb-6 sm:pb-10 border-b border-white/[0.08]">
           <div className="flex items-center gap-2 text-xs font-mono tracking-cinematic uppercase text-neutral-500 mb-3 sm:mb-4">
-            <span>METHODOLOGY</span>
+            <span>METODOLOGI</span>
             <span>//</span>
-            <span>PRODUCTION FRAMEWORK</span>
+            <span>ALUR KERJA STUDIO</span>
           </div>
 
           <h1 className="text-3xl sm:text-6xl lg:text-7xl font-extrabold uppercase tracking-tight text-white leading-tight sm:leading-none">
-            FROM IDEA
+            DARI GAGASAN
             <br />
-            <span className="text-neutral-300 font-light italic">TO FRAME.</span>
+            <span className="text-neutral-300 font-light italic">MENJADI KARYA.</span>
           </h1>
 
           <p className="mt-4 sm:mt-6 text-xs sm:text-base max-w-2xl font-light text-neutral-400 leading-relaxed">
-            We eliminate ambiguity. Our 4-step workflow balances boundless creative experimentation with exact logistical precision from first brief to archival delivery.
+            Kami mengeliminasi keraguan. Alur kerja 4 tahap kami menyeimbangkan eksplorasi kreatif bebas dengan ketepatan logistik yang rapi dari awal brief hingga serah terima karya.
           </p>
         </div>
 
@@ -103,7 +103,7 @@ export default function ProcessPage() {
               <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
                 <div className="lg:col-span-4">
                   <span className="text-xs font-mono tracking-cinematic uppercase text-neutral-500 block mb-2">
-                    PHASE {phase.step} // {phase.subtitle}
+                    TAHAP {phase.step} // {phase.subtitle}
                   </span>
                   <h2 className="text-3xl sm:text-4xl font-extrabold uppercase tracking-tight text-white">
                     {phase.name}
@@ -117,7 +117,7 @@ export default function ProcessPage() {
 
                   <div className="pt-4 border-t border-white/[0.06]">
                     <span className="text-[10px] font-mono tracking-cinematic uppercase text-neutral-500 block mb-3">
-                      KEY DELIVERABLES & ACTIONS
+                      LUARAN UTAMA &amp; AKSI KERJA
                     </span>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                       {phase.steps.map((action, aIdx) => (

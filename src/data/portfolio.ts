@@ -48,15 +48,15 @@ export const PORTFOLIO_PROJECTS: Project[] = [
   {
     id: 'graduation-futri',
     slug: 'futri-risqi-cahyani-editorial',
-    title: 'Futri Risqi Cahyani — Architectural Graduation',
+    title: 'Futri Risqi Cahyani — Wisuda Arsitektural',
     category: 'Graduation',
     serviceType: 'Photography',
     year: '2026',
-    location: 'Banjarmasin (ULM Architectural Facade)',
+    location: 'Banjarmasin (Fasad Arsitektur ULM)',
     client: 'Futri Risqi Cahyani, S.Pi',
     coverImage: '/porto/graduation/futri-hero.jpg',
-    description: 'A cinematic graduation visual monograph fusing modernist glass architectural facades with chiaroscuro portraiture.',
-    story: 'Commissioned to commemorate academic milestone at Universitas Lambung Mangkurat, our direction broke away from generic studio templates. We utilized the angular geometry of modern tinted glass facades, concrete staircases, and dramatic natural shadow gradations to present Futri in a timeless, high-fashion editorial light.',
+    description: 'Monograf visual wisuda sinematik yang memadukan fasad arsitektur kaca modern dengan portraiture chiaroscuro.',
+    story: 'Dibuat khusus untuk memperingati pencapaian akademis di Universitas Lambung Mangkurat, arahan visual kami keluar dari pakem studio konvensional. Kami memanfaatkan geometri fasad kaca modern, tangga beton minimalis, dan gradasi bayangan alami yang dramatis untuk menampilkan Futri dalam nuansa editorial berkelas abadi.',
     images: [
       '/porto/graduation/futri-hero.jpg',
       '/porto/graduation/futri-01.jpg',
@@ -68,26 +68,26 @@ export const PORTFOLIO_PROJECTS: Project[] = [
     ],
     aspectRatio: 'landscape',
     featured: true,
-    deliverables: ['Editorial Graduation Album', 'Full High-Res Archival Series (24MP)', 'Framed Fine Art Master Prints'],
+    deliverables: ['Album Wisuda Editorial', 'Koleksi Arsip Resolusi Penuh (24MP)', 'Cetak Fine Art Master Berbingkai'],
     credits: [
-      { role: 'Principal Photographer', name: 'NOIR FRAME' },
-      { role: 'Lighting Director', name: 'Studio Lead' },
-      { role: 'Subject', name: 'Futri Risqi Cahyani, S.Pi' }
+      { role: 'Fotografer Utama', name: 'NOIR FRAME' },
+      { role: 'Pengarah Tata Cahaya', name: 'Studio Lead' },
+      { role: 'Subjek', name: 'Futri Risqi Cahyani, S.Pi' }
     ],
     cameraSpecs: 'Sony Alpha 7 Series • FE 85mm f/1.4 GM • FE 35mm f/1.4 GM'
   },
   {
     id: 'graduation-nocturnal-cohort',
     slug: 'nocturnal-cohort-2026',
-    title: 'Nocturnal Cohort ’26 — Faculty of Fisheries & Marine',
+    title: 'Nocturnal Cohort ’26 — Fakultas Perikanan & Kelautan',
     category: 'Graduation',
     serviceType: 'Event Documentation',
     year: '2026',
     location: 'Banjarmasin',
     client: 'Annisa, Julia, Rusma, Normelian & Ermalia',
     coverImage: '/porto/graduation/group-hero.jpg',
-    description: 'High-impact nocturnal graduation session driven by direct flash aesthetics, asphalt reflections, and collective milestone celebration.',
-    story: 'Documenting the graduation of five scholars from the Faculty of Fisheries & Marine Science. Rather than conventional daylight campus shots, this session embraced the mystique of night: direct off-camera flash, hard directional shadows, street-level compositions, and uninhibited camaraderie celebrating shared perseverance.',
+    description: 'Sesi wisuda nokturnal penuh energi yang dipadukan dengan estetika direct flash, refleksi aspal, dan selebrasi kebersamaan.',
+    story: 'Mendokumentasikan kelulusan lima wisudawati dari Fakultas Perikanan dan Kelautan. Alih-alih foto siang hari kampus yang standar, sesi ini mengeksplorasi estetika malam: direct flash eksternal, bayangan terarah yang tegas, komposisi jalanan, dan kehangatan persahabatan yang merayakan perjuangan bersama.',
     images: [
       '/porto/graduation/group-hero.jpg',
       '/porto/graduation/group-01.jpg',
@@ -97,26 +97,26 @@ export const PORTFOLIO_PROJECTS: Project[] = [
     ],
     aspectRatio: 'landscape',
     featured: true,
-    deliverables: ['Nocturnal Group Master Series', 'Commemorative Archival Gallery', 'Social High-Impact Highlights'],
+    deliverables: ['Seri Master Grup Nokturnal', 'Galeri Arsip Dokumentasi', 'Foto Sorotan Media Sosial Resolusi Tinggi'],
     credits: [
-      { role: 'Strobe Specialist', name: 'NOIR FRAME' },
+      { role: 'Spesialis Pencahayaan', name: 'NOIR FRAME' },
       { role: 'Colorist', name: 'NOIR Color Lab' },
-      { role: 'Cohort', name: 'Fisheries & Marine Class of 2026' }
+      { role: 'Kelompok Wisuda', name: 'Fakultas Perikanan & Kelautan 2026' }
     ],
     cameraSpecs: 'Sony Alpha 7 Series • Off-Camera Strobe Rig • FE 24-70mm f/2.8 GM'
   },
   {
     id: 'portrait-sri-suci-duo',
     slug: 'sri-and-suci-milestone',
-    title: 'Sri & Suci — The Milestone Duo',
+    title: 'Sri & Suci — Dua Sahabat Wisuda',
     category: 'Portrait',
     serviceType: 'Visual Storytelling',
     year: '2026',
     location: 'Banjarmasin',
     client: 'Sri Nor Fatimah, S.Pi & Suci Rizqi Cahyani, S.Pi',
     coverImage: '/porto/graduation/duo-hero.jpg',
-    description: 'Dual milestone monograph traversing golden hour skylines into high-contrast nocturnal architectural scapes.',
-    story: 'A dialogue between friendship, parallel academic journeys, and atmospheric light. Starting in open-sky dusk with natural warmth and candid laughter, the monograph culminated on modern architectural steps at night where intense strobe highlights sculpted silhouettes against deep nocturnal blacks.',
+    description: 'Monograf dua sahabat yang melintasi hangatnya langit senja ke lanskap arsitektur malam berkontras tinggi.',
+    story: 'Dialog visual antara persahabatan, perjalanan akademis bersama, dan permainan cahaya atmosferik. Dimulai dari senja langit terbuka dengan kehangatan tawa natural, sesi berlanjut ke tangga arsitektur modern saat malam tiba di mana sorotan lampu strobe memahat siluet tajam berlatar kegelapan elegan.',
     images: [
       '/porto/graduation/duo-hero.jpg',
       '/porto/graduation/duo-01.jpg',
@@ -125,25 +125,25 @@ export const PORTFOLIO_PROJECTS: Project[] = [
     ],
     aspectRatio: 'landscape',
     featured: true,
-    deliverables: ['Milestone Duo Print Series', 'Color-Graded Full Archival Stills', 'Mini Documentary Gallery'],
+    deliverables: ['Seri Cetak Dua Sahabat', 'File Lengkap Color Graded', 'Galeri Mini Dokumenter'],
     credits: [
-      { role: 'Photographer & Art Director', name: 'NOIR FRAME' },
-      { role: 'Subjects', name: 'Sri Nor Fatimah & Suci Rizqi Cahyani' }
+      { role: 'Fotografer & Pengarah Artistik', name: 'NOIR FRAME' },
+      { role: 'Subjek', name: 'Sri Nor Fatimah & Suci Rizqi Cahyani' }
     ],
     cameraSpecs: 'Sony Alpha 7 Series • FE 50mm f/1.2 GM • FE 85mm f/1.4 GM'
   },
   {
     id: 'portrait-editorial-archive',
     slug: 'editorial-portrait-archive',
-    title: 'Editorial Portrait Archive',
+    title: 'Arsip Portrait Editorial',
     category: 'Portrait',
     serviceType: 'Photography',
     year: '2026',
     location: 'Banjarmasin',
     client: 'Editorial Archive',
     coverImage: '/porto/portrait/portrait-01.jpg',
-    description: 'Fine art portraiture investigating human form, facial micro-expressions, and deep chiaroscuro tonal gradations.',
-    story: 'Stripping away excess leaves only posture, skin texture, and pure emotional resonance. Lit with focused directional lighting, this continuing archive celebrates the raw elegance of unadorned presence.',
+    description: 'Karya seni fotografi portrait yang mengeksplorasi gestur manusia, mikroekspresi wajah, dan gradasi chiaroscuro yang mendalam.',
+    story: 'Menghilangkan elemen yang tidak perlu menyisakan postur tubuh, tekstur kulit, dan getaran emosi yang murni. Disinari dengan pencahayaan terarah yang fokus, arsip berkelanjutan ini merayakan keanggunan kehadiran subjek yang jujur.',
     images: [
       '/porto/portrait/portrait-01.jpg',
       '/porto/portrait/portrait-02.jpg',
@@ -154,10 +154,10 @@ export const PORTFOLIO_PROJECTS: Project[] = [
     ],
     aspectRatio: 'portrait',
     featured: false,
-    deliverables: ['Fine Art Print Edition', 'High-Res Exhibition Files'],
+    deliverables: ['Edisi Cetak Fine Art', 'File Master Pameran Resolusi Penuh'],
     credits: [
-      { role: 'Principal Artist', name: 'NOIR FRAME' },
-      { role: 'Lighting Specialist', name: 'Studio Associate' }
+      { role: 'Fotografer Utama', name: 'NOIR FRAME' },
+      { role: 'Spesialis Pencahayaan', name: 'Studio Associate' }
     ],
     cameraSpecs: 'Sony Alpha 7 Series • FE 85mm f/1.4 GM'
   },
@@ -171,8 +171,8 @@ export const PORTFOLIO_PROJECTS: Project[] = [
     location: 'Jakarta',
     client: 'Monolith Horology Co.',
     coverImage: '/porto/commercial/commercial-01.jpg',
-    description: 'High-precision cinematography and macro documentation celebrating Swiss horological engineering and dark architectural geometry.',
-    story: 'Commissioned to unveil Monolith’s titanium flagship timepiece, our objective was to portray mechanical mastery through extreme chiaroscuro illumination, slow-speed motion control, and raw metallic texturing. Every frame was calibrated to honor the precision of seconds.',
+    description: 'Sinematografi presisi tinggi dan dokumentasi makro yang merayakan teknik arloji mekanik serta geometri arsitektur gelap.',
+    story: 'Dibuat untuk peluncuran arloji titanium flagship Monolith, tujuan kami adalah menggambarkan keahlian mekanis melalui pencahayaan chiaroscuro ekstrem, gerakan kamera halus, dan tekstur logam yang tegas. Setiap frame dikalibrasi untuk menghargai presisi detik demi detik.',
     images: [
       '/porto/commercial/commercial-01.jpg',
       '/porto/product/product-02.jpg',
@@ -180,26 +180,26 @@ export const PORTFOLIO_PROJECTS: Project[] = [
     ],
     aspectRatio: 'landscape',
     featured: false,
-    deliverables: ['Commercial Film (60s)', 'Editorial Still Series (12 Frames)', 'Social Media Cutdowns (9:16)'],
+    deliverables: ['Film Komersial (60 Detik)', 'Koleksi Foto Editorial (12 Frame)', 'Potongan Media Sosial (9:16)'],
     credits: [
       { role: 'Director of Photography', name: 'NOIR FRAME Studio' },
-      { role: 'Lighting Director', name: 'Studio Lead' },
-      { role: 'Post Production & Grade', name: 'NOIR Color Lab' }
+      { role: 'Pengarah Tata Cahaya', name: 'Studio Lead' },
+      { role: 'Pascaproduksi & Color Grading', name: 'NOIR Color Lab' }
     ],
     cameraSpecs: 'RED V-RAPTOR 8K • Master Prime 50mm • Probe Macro'
   },
   {
     id: 'wedding-eternal-vow',
     slug: 'an-eternal-vow',
-    title: 'An Eternal Vow',
+    title: 'Janji Suci Abadi',
     category: 'Wedding',
     serviceType: 'Photography',
     year: '2026',
     location: 'Banjarmasin',
     client: 'Arya & Bianca',
     coverImage: '/porto/wedding/wedding-01.jpg',
-    description: 'Cinematic and intimate wedding documentation capturing atmospheric emotional nuances, sacred vows, and dusk reception memories.',
-    story: 'Set amidst an open-air riverfront pavilion in Banjarmasin, this visual narrative avoided forced posing in favor of fly-on-the-wall photojournalism. We embraced natural dusk gradients and candlelight warmth to construct an honest, timeless family heirloom.',
+    description: 'Dokumentasi pernikahan intim dan sinematik yang menangkap nuansa emosi, janji suci sakral, dan kenangan resepsi senja.',
+    story: 'Berlatar di pavilion tepi sungai Banjarmasin, narasi visual ini menghindari pose yang kaku dan mengutamakan pendekatan fotojurnalistik dokumenter. Kami memanfaatkan gradasi senja alami dan hangatnya nyala lilin untuk membangun warisan kenangan keluarga yang abadi.',
     images: [
       '/porto/wedding/wedding-01.jpg',
       '/porto/wedding/wedding-02.jpg',
@@ -207,10 +207,10 @@ export const PORTFOLIO_PROJECTS: Project[] = [
     ],
     aspectRatio: 'landscape',
     featured: false,
-    deliverables: ['Editorial Leather Album (80p)', 'Cinematic Highlight Film (4K)', 'Raw Curated Gallery (450 Frames)'],
+    deliverables: ['Album Kulit Editorial (80 Halaman)', 'Video Highlight Sinematik (4K)', 'Galeri Lengkap Terkurasi (450 Foto)'],
     credits: [
-      { role: 'Lead Photographer', name: 'NOIR FRAME' },
-      { role: 'Second Unit Lead', name: 'Creative Partner' },
+      { role: 'Fotografer Utama', name: 'NOIR FRAME' },
+      { role: 'Fotografer Unit Kedua', name: 'Mitra Kreatif' },
       { role: 'Colorist', name: 'NOIR Post' }
     ],
     cameraSpecs: 'Sony A1 & Leica M11 • 35mm f/1.4 GM • 85mm f/1.2'
@@ -218,15 +218,15 @@ export const PORTFOLIO_PROJECTS: Project[] = [
   {
     id: 'campaign-urban-nomad',
     slug: 'urban-nomad-ss26',
-    title: 'Urban Nomad Nocturnal Study',
+    title: 'Studi Nokturnal Urban Nomad',
     category: 'Campaign',
     serviceType: 'Creative Production',
     year: '2026',
     location: 'Banjarmasin / Jakarta',
     client: 'Nomad Division Studio',
     coverImage: '/porto/campaign/campaign-01.jpg',
-    description: 'A dark nocturnal study documenting modern architectural silhouettes, pavement reflections, and cinematic flash portraits.',
-    story: 'Constructed as an ode to metropolitan speed and nocturnal solitude, this series captures subjects in low-light architectural environments. We integrated fast shutter freezes, directional strobe flashes, and low-angle perspective framing.',
+    description: 'Eksplorasi nokturnal yang mendokumentasikan siluet arsitektur modern, pantulan aspal basah, dan portrait flash sinematik.',
+    story: 'Dirancang sebagai penghormatan terhadap denyut kota dan kesunyian malam, rangkaian ini menangkap subjek di lingkungan arsitektur redup. Kami memadukan kecepatan rana tinggi, lampu kilat strobe terarah, dan sudut pengambilan gambar rendah.',
     images: [
       '/porto/campaign/campaign-01.jpg',
       '/porto/campaign/campaign-02.jpg',
@@ -234,26 +234,26 @@ export const PORTFOLIO_PROJECTS: Project[] = [
     ],
     aspectRatio: 'landscape',
     featured: false,
-    deliverables: ['Global Lookbook Stills', 'Campaign Teaser (30s)', 'Digital Billboard Deliverables'],
+    deliverables: ['Foto Lookbook Global', 'Teaser Kampanye (30 Detik)', 'Materi Billboard Digital'],
     credits: [
-      { role: 'Creative Direction', name: 'NOIR FRAME Studio' },
-      { role: 'Stylist & Producer', name: 'External Partner' },
-      { role: 'Cinematography', name: 'NOIR Video Crew' }
+      { role: 'Pengarah Kreatif', name: 'NOIR FRAME Studio' },
+      { role: 'Penata Gaya & Produser', name: 'Mitra Eksternal' },
+      { role: 'Sinematografi', name: 'Kru Video NOIR' }
     ],
     cameraSpecs: 'Sony Alpha 7 Series • FE 24-70mm f/2.8 GM • FE 85mm f/1.4 GM'
   },
   {
     id: 'product-obsidian-noir',
     slug: 'obsidian-noir-fragrance',
-    title: 'Obsidian Noir Fragrance',
+    title: 'Parfum Obsidian Noir',
     category: 'Product',
     serviceType: 'Commercial Photography',
     year: '2026',
     location: 'Banjarmasin / Jakarta',
     client: 'Maison D’Ombre Parfums',
     coverImage: '/porto/product/product-01.jpg',
-    description: 'Still-life commercial study exploring smoked glass refractions, suspended liquid droplets, and mineral black basalt.',
-    story: 'Designing visuals for scent requires evoking invisible sensory weight. We utilized high-speed flash duration to suspend vapor mist around the flacon, flanked by volcanic obsidian stones and sharp horizontal light slits.',
+    description: 'Studi komersial still-life yang mengeksplorasi refraksi botol kaca gelap, bulir cairan melayang, dan batu basal hitam.',
+    story: 'Merancang visual untuk wewangian membutuhkan kemampuan membangkitkan bobot sensori yang tak kasat mata. Kami menggunakan durasi flash berkecepatan tinggi untuk membekukan uap aroma di sekitar botol kaca, diapit bebatuan obsidian vulkanik dan celah cahaya horizontal yang tajam.',
     images: [
       '/porto/product/product-01.jpg',
       '/porto/product/product-03.jpg',
@@ -261,10 +261,10 @@ export const PORTFOLIO_PROJECTS: Project[] = [
     ],
     aspectRatio: 'portrait',
     featured: false,
-    deliverables: ['E-Commerce Hero Assets', 'Magazine Print Ad (A4 Spread)', 'Social Reel Animations'],
+    deliverables: ['Aset Utama E-Commerce', 'Iklan Majalah Cetak (Ukuran A4)', 'Animasi Reel Media Sosial'],
     credits: [
-      { role: 'Tabletop Director', name: 'NOIR FRAME' },
-      { role: 'Set Stylist', name: 'Studio Prop Team' }
+      { role: 'Pengarah Tabletop', name: 'NOIR FRAME' },
+      { role: 'Penata Properti', name: 'Tim Properti Studio' }
     ],
     cameraSpecs: 'Fujifilm GFX 100 II • GF 120mm f/4 Macro R LM OIS WR'
   }

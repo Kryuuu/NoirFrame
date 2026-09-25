@@ -2,26 +2,29 @@ import type { Metadata } from 'next';
 import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import { WhatsAppModalProvider } from '@/components/WhatsAppModal';
+import SmoothScroll from '@/components/SmoothScroll';
+import AmbientGlow from '@/components/AmbientGlow';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://noirframe.studio'),
-  title: 'NOIR FRAME — Photography & Videography Studio',
+  title: 'NOIR FRAME — Studio Fotografi & Videografi Sinematik',
   description:
-    'NOIR FRAME is a creative visual studio specializing in photography, videography, visual storytelling, and creative production.',
+    'NOIR FRAME adalah studio kreatif visual spesialis fotografi, videografi sinematik, visual storytelling, dan produksi kreatif berkelas abadi.',
   keywords: [
     'NOIR FRAME',
-    'Creative Studio',
-    'Photography Agency',
-    'Commercial Videography',
-    'Wedding Stories',
-    'Brand Visuals',
-    'Jakarta Photography',
-    'Cinematography',
+    'Studio Foto Banjarmasin',
+    'Videografer Banjarmasin',
+    'Foto Wisuda Banjarmasin',
+    'Paket Foto Video Murah',
+    'Dokumentasi Sinematik',
+    'Fotografer Profesional',
+    'Drone Videography',
   ],
   openGraph: {
-    title: 'NOIR FRAME — Photography & Videography Studio',
+    title: 'NOIR FRAME — Studio Fotografi & Videografi Sinematik',
     description:
-      'NOIR FRAME is a creative visual studio specializing in photography, videography, visual storytelling, and creative production.',
+      'NOIR FRAME adalah studio kreatif visual spesialis fotografi, videografi sinematik, visual storytelling, dan produksi kreatif berkelas abadi.',
     url: 'https://noirframe.studio',
     siteName: 'NOIR FRAME',
     images: [
@@ -32,7 +35,7 @@ export const metadata: Metadata = {
         alt: 'NOIR FRAME Visual Studio',
       },
     ],
-    locale: 'en_US',
+    locale: 'id_ID',
     type: 'website',
   },
 };
@@ -43,11 +46,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="scroll-smooth bg-[#080808] text-[#f4f4f2]">
+    <html lang="id" className="bg-[#080808] text-[#f4f4f2]">
       <body className="min-h-screen flex flex-col bg-[#080808] text-[#f4f4f2] antialiased">
-        <Navbar />
-        <main className="flex-grow">{children}</main>
-        <Footer />
+        <SmoothScroll>
+          <AmbientGlow />
+          <WhatsAppModalProvider>
+            <Navbar />
+            <main className="flex-grow">{children}</main>
+            <Footer />
+          </WhatsAppModalProvider>
+        </SmoothScroll>
       </body>
     </html>
   );

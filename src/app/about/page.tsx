@@ -6,31 +6,31 @@ import { ArrowUpRight } from 'lucide-react';
 import CTASection from '@/components/CTASection';
 
 export const metadata: Metadata = {
-  title: 'About The Studio — NOIR FRAME',
+  title: 'Tentang Studio — NOIR FRAME',
   description:
-    'Learn about NOIR FRAME: our philosophy of visual storytelling, creative direction, and cinematic discipline.',
+    'Pelajari filosofi NOIR FRAME: seni penceritaan visual, arahan kreatif terarah, dan disiplin sinematik berkelas abadi.',
 };
 
 const PHILOSOPHY_PILLARS = [
   {
     number: '01',
-    title: 'THE DISCIPLINE OF NEGATIVE SPACE',
-    text: 'We believe what you leave out of the frame is just as crucial as what you include. Emptiness grants breathing room for raw emotion and architectural form.',
+    title: 'DISIPLIN RUANG NEGATIF',
+    text: 'Kami percaya apa yang tidak dimasukkan ke dalam frame sama pentingnya dengan apa yang disertakan. Ketiadaan distraksi memberi ruang napas bagi emosi murni dan komposisi bentuk.',
   },
   {
     number: '02',
-    title: 'INTENTIONAL ILLUMINATION',
-    text: 'Light is our primary medium. We sculpt highlights and shadows using chiaroscuro techniques that elevate subjects beyond standard flat documentation.',
+    title: 'PENCAHAYAAN PENUH INTENSI',
+    text: 'Cahaya adalah medium utama kami. Kami memahat sorotan dan bayangan dengan teknik chiaroscuro yang mengangkat subjek melampaui sekadar dokumentasi datar biasa.',
   },
   {
     number: '03',
-    title: 'NARRATIVE ARCHITECTURE',
-    text: 'Every image belongs to a larger sequence. We structure visual rhythm like cinema—alternating between breathtaking wide tableaus and visceral close-ups.',
+    title: 'ARSITEKTUR NARASI',
+    text: 'Setiap gambar adalah bagian dari sekuens yang lebih besar. Kami menyusun ritme visual layaknya sinema—bergantian harmonis antara lanskap megah dan tangkapan emosi jarak dekat.',
   },
   {
     number: '04',
-    title: 'ARCHIVAL LONGEVITY',
-    text: 'Trends expire rapidly. We prioritize timeless color grading, natural skin tones, and organic textures that maintain dignity and resonance decades into the future.',
+    title: 'DAYA TAHAN ABADI',
+    text: 'Tren visual cepat memudar. Kami memprioritaskan color grading bernilai abadi, warna kulit alami, dan tekstur organik yang tetap bermakna hingga puluhan tahun mendatang.',
   },
 ];
 
@@ -41,15 +41,15 @@ export default function AboutPage() {
         {/* Header */}
         <div className="mb-10 sm:mb-28 pb-6 sm:pb-10 border-b border-white/[0.08]">
           <div className="flex items-center gap-2 text-xs font-mono tracking-cinematic uppercase text-neutral-500 mb-3 sm:mb-4">
-            <span>IDENTITY</span>
+            <span>IDENTITAS</span>
             <span>//</span>
-            <span>STUDIO MANIFESTO</span>
+            <span>MANIFESTO STUDIO</span>
           </div>
 
           <h1 className="text-3xl sm:text-6xl lg:text-7xl font-extrabold uppercase tracking-tight text-white leading-tight sm:leading-none">
-            AESTHETIC
+            ESTETIKA
             <br />
-            <span className="text-neutral-300 font-light italic">WITH INTENTION.</span>
+            <span className="text-neutral-300 font-light italic">DENGAN INTENSI.</span>
           </h1>
         </div>
 
@@ -57,39 +57,39 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center mb-16 sm:mb-28">
           <div className="lg:col-span-7 space-y-4 sm:space-y-6 text-sm sm:text-lg text-neutral-300 font-light leading-relaxed">
             <p className="text-xl sm:text-3xl text-white font-normal leading-relaxed">
-              NOIR FRAME is a visual creative studio focused on photography, videography, and visual storytelling.
+              NOIR FRAME adalah studio kreatif visual yang berdedikasi pada fotografi, videografi sinematik, dan penceritaan visual yang bernyawa.
             </p>
             <p className="text-neutral-400">
-              We believe a strong image is more than something that looks good. It should carry atmosphere, emotion, identity, and meaning.
+              Kami percaya bahwa gambar yang kuat lebih dari sekadar terlihat estetis. Sebuah visual harus menghembuskan atmosfer, emosi, identitas, dan makna yang mendalam.
             </p>
             <p className="text-neutral-400">
-              From intimate moments to large-scale productions, we approach every project with a balance of creativity, precision, and intention.
+              Dari momen personal berharga hingga produksi komersial dan event berskala besar, kami menggarap setiap proyek dengan keseimbangan antara kreativitas tinggi, presisi teknis, dan intensi yang tulus.
             </p>
 
             {/* Studio Stats */}
             <div className="grid grid-cols-3 gap-3 sm:gap-6 pt-6 sm:pt-10 border-t border-white/[0.08]">
               <div>
                 <span className="text-2xl sm:text-4xl font-extrabold text-white font-mono block">
-                  XX+
+                  100+
                 </span>
                 <span className="text-[9px] sm:text-xs tracking-cinematic uppercase text-neutral-500 font-mono mt-1 block">
-                  PROJECTS
+                  PROYEK TUNTAS
                 </span>
               </div>
               <div>
                 <span className="text-2xl sm:text-4xl font-extrabold text-white font-mono block">
-                  XX+
+                  80+
                 </span>
                 <span className="text-[9px] sm:text-xs tracking-cinematic uppercase text-neutral-500 font-mono mt-1 block">
-                  CLIENTS
+                  KLIEN KREATIF
                 </span>
               </div>
               <div>
                 <span className="text-2xl sm:text-4xl font-extrabold text-white font-mono block">
-                  20XX
+                  2023
                 </span>
                 <span className="text-[9px] sm:text-xs tracking-cinematic uppercase text-neutral-500 font-mono mt-1 block">
-                  — PRESENT
+                  — SEKARANG
                 </span>
               </div>
             </div>
@@ -99,7 +99,7 @@ export default function AboutPage() {
             <div className="relative aspect-[3/4] border border-white/20 bg-[#0d0d0d] overflow-hidden">
               <Image
                 src="/porto/campaign/campaign-02.jpg"
-                alt="NOIR FRAME Studio Philosophy"
+                alt="NOIR FRAME Filosofi Studio"
                 fill
                 sizes="(max-width: 1024px) 100vw, 40vw"
                 className="object-cover"
@@ -110,7 +110,7 @@ export default function AboutPage() {
               <div className="absolute bottom-3 right-3 w-3 h-3 border-b-2 border-r-2 border-white/80" />
 
               <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 z-10 text-[9px] sm:text-[10px] font-mono tracking-wider sm:tracking-cinematic uppercase text-neutral-300 bg-black/80 px-2.5 sm:px-3 py-1 sm:py-1.5 border border-white/10">
-                RAW DISCIPLINE // FRAME ARCHIVE
+                DISIPLIN KREATIF // ARSIP BINGKAI
               </div>
             </div>
           </div>
@@ -120,10 +120,10 @@ export default function AboutPage() {
         <div className="pt-12 sm:pt-20 border-t border-white/[0.08] mb-16 sm:mb-28">
           <div className="mb-8 sm:mb-14">
             <span className="text-xs font-mono tracking-cinematic uppercase text-neutral-500 block mb-2">
-              // FOUNDATIONS
+              // PRINSIP DASAR
             </span>
             <h2 className="text-2xl sm:text-4xl font-bold uppercase tracking-tight text-white">
-              CORE PHILOSOPHY
+              FILOSOFI UTAMA
             </h2>
           </div>
 

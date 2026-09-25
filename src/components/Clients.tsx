@@ -3,12 +3,12 @@ import Link from 'next/link';
 import { ArrowUpRight } from 'lucide-react';
 
 const CLIENT_PLACEHOLDERS = [
-  { label: 'CLIENT NAME 01', type: 'Fashion & Editorial' },
-  { label: 'BRAND NAME 02', type: 'Horology & Luxury Goods' },
-  { label: 'STUDIO NAME 03', type: 'Architectural Digest' },
-  { label: 'COMPANY NAME 04', type: 'Automotive & Tech' },
-  { label: 'CREATIVE LAB 05', type: 'Music & Performing Arts' },
-  { label: 'COLLECTIVE 06', type: 'Hospitality & Travel' },
+  { label: 'KLIEN KOMERSIAL 01', type: 'Busana & Editorial' },
+  { label: 'BRAND FASHION 02', type: 'Gaya Hidup & Produk' },
+  { label: 'STUDIO KREATIF 03', type: 'Arsitektur & Interior' },
+  { label: 'PERUSAHAAN 04', type: 'Teknologi & Korporat' },
+  { label: 'SENI & MUSIK 05', type: 'Musik & Pertunjukan' },
+  { label: 'HOSPITALITY 06', type: 'Kuliner & Wisata' },
 ];
 
 export default function Clients() {
@@ -19,14 +19,14 @@ export default function Clients() {
         <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-10 sm:mb-16 pb-6 border-b border-white/[0.08] gap-3 sm:gap-4">
           <div>
             <span className="text-xs font-mono tracking-cinematic uppercase text-neutral-500 block mb-2">
-              // COLLABORATIONS
+              // KOLABORASI
             </span>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold uppercase tracking-tight text-white">
-              SELECTED CLIENTS
+              KLIEN & MITRA PILIHAN
             </h2>
           </div>
           <span className="text-[10px] sm:text-xs font-mono text-neutral-500 uppercase tracking-widest">
-            COMMISSION ARCHIVE
+            ARSIP KERJASAMA
           </span>
         </div>
 
@@ -53,13 +53,13 @@ export default function Clients() {
         {/* Bottom Collaboration Inquiry CTA */}
         <div className="mt-8 sm:mt-14 pt-6 sm:pt-8 border-t border-white/[0.06] flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6">
           <p className="text-xs sm:text-sm text-neutral-400 font-light text-center sm:text-left">
-            Interested in working together on your next commercial film, campaign, or event?
+            Tertarik berkolaborasi untuk proyek komersial, kampanye visual, wisuda, atau dokumentasi acara Anda?
           </p>
           <Link
             href="/contact"
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 border border-white/20 hover:border-white text-xs tracking-editorial uppercase text-white hover:bg-white hover:text-black transition-all group shrink-0"
           >
-            <span>INQUIRE FOR COLLABORATION</span>
+            <span>KONSULTASI KOLABORASI</span>
             <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
           </Link>
         </div>

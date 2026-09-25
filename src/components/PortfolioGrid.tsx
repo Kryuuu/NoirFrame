@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { Project, ProjectCategory } from '@/data/portfolio';
 import ProjectCard from './ProjectCard';
+import MotionReveal from './MotionReveal';
 
 interface PortfolioGridProps {
   projects: Project[];
@@ -10,15 +11,15 @@ interface PortfolioGridProps {
   initialFilter?: string;
 }
 
-const FILTER_TABS: (ProjectCategory | 'All')[] = [
-  'All',
-  'Graduation',
-  'Portrait',
-  'Event',
-  'Commercial',
-  'Wedding',
-  'Campaign',
-  'Product',
+const FILTER_TABS: { key: string; label: string }[] = [
+  { key: 'All', label: 'Semua' },
+  { key: 'Graduation', label: 'Wisuda' },
+  { key: 'Portrait', label: 'Portrait' },
+  { key: 'Event', label: 'Event' },
+  { key: 'Commercial', label: 'Komersial' },
+  { key: 'Wedding', label: 'Pernikahan' },
+  { key: 'Campaign', label: 'Campaign' },
+  { key: 'Product', label: 'Produk' },
 ];
 
 export default function PortfolioGrid({
@@ -43,18 +44,18 @@ export default function PortfolioGrid({
       {enableFiltering && (
         <div className="flex items-center gap-2 sm:gap-3 mb-8 sm:mb-16 border-b border-white/[0.08] pb-4 sm:pb-6 overflow-x-auto no-scrollbar sm:flex-wrap -mx-6 px-6 sm:mx-0 sm:px-0">
           {FILTER_TABS.map((tab) => {
-            const isActive = activeCategory === tab;
+            const isActive = activeCategory === tab.key;
             return (
               <button
-                key={tab}
-                onClick={() => setActiveCategory(tab)}
+                key={tab.key}
+                onClick={() => setActiveCategory(tab.key)}
                 className={`text-[11px] sm:text-xs tracking-editorial uppercase px-3.5 sm:px-4 py-2 border transition-all duration-300 shrink-0 whitespace-nowrap ${
                   isActive
                     ? 'border-white bg-white text-black font-semibold'
                     : 'border-white/10 text-neutral-400 hover:text-white hover:border-white/30 bg-black/20'
                 }`}
               >
-                {tab}
+                {tab.label}
               </button>
             );
           })}
@@ -81,7 +82,9 @@ export default function PortfolioGrid({
 
           return (
             <div key={project.id} className={`${colSpanClass}`}>
-              <ProjectCard project={project} />
+              <MotionReveal animation="fade-up" delay={Math.min((index % 3) * 120, 300)} duration={650}>
+                <ProjectCard project={project} />
+              </MotionReveal>
             </div>
           );
         })}
@@ -90,7 +93,7 @@ export default function PortfolioGrid({
       {filteredProjects.length === 0 && (
         <div className="py-20 text-center border border-dashed border-white/10 p-12">
           <p className="text-sm tracking-editorial uppercase text-neutral-400">
-            No projects found in this archive category.
+            Tidak ada proyek yang ditemukan dalam kategori arsip ini.
           </p>
         </div>
       )}

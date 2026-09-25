@@ -5,9 +5,9 @@ import CTASection from '@/components/CTASection';
 import { getAllProjects } from '@/data/portfolio';
 
 export const metadata: Metadata = {
-  title: 'Work & Portfolio Archive — NOIR FRAME',
+  title: 'Karya & Arsip Portofolio — NOIR FRAME',
   description:
-    'Explore the portfolio archive of NOIR FRAME: commercial films, intimate wedding stories, luxury brand visuals, and fine art portraits.',
+    'Jelajahi arsip portofolio visual NOIR FRAME: film komersial, dokumentasi wisuda, campaign visual brand, dan fotografi portrait.',
 };
 
 export default function WorkPage() {
@@ -19,23 +19,23 @@ export default function WorkPage() {
         {/* Page Header */}
         <div className="mb-10 sm:mb-20 pb-6 sm:pb-10 border-b border-white/[0.08]">
           <div className="flex items-center gap-2 text-xs font-mono tracking-cinematic uppercase text-neutral-500 mb-3 sm:mb-4">
-            <span>INDEX</span>
+            <span>INDEKS</span>
             <span>//</span>
-            <span>PORTFOLIO ARCHIVE</span>
+            <span>ARSIP PORTOFOLIO</span>
           </div>
 
           <h1 className="text-3xl sm:text-6xl lg:text-7xl font-extrabold uppercase tracking-tight text-white leading-tight sm:leading-none">
-            SELECTED
+            KARYA &amp;
             <br />
-            <span className="text-neutral-300 font-light italic">STORIES & FRAMES.</span>
+            <span className="text-neutral-300 font-light italic">ARSIP TERPILIH.</span>
           </h1>
 
           <div className="mt-4 sm:mt-6 flex flex-col sm:flex-row justify-between sm:items-end gap-3 sm:gap-4 text-neutral-400">
             <p className="text-xs sm:text-sm max-w-xl font-light leading-relaxed">
-              Every project represents a tailored collaboration between light, intention, and narrative architecture. Browse by discipline or archive category.
+              Setiap karya merepresentasikan kolaborasi harmonis antara cahaya, intensi artistik, dan narasi yang bernyawa. Telusuri berdasarkan kategori atau disiplin karya.
             </p>
             <span className="text-[10px] sm:text-xs font-mono text-neutral-500 uppercase">
-              TOTAL COMMISSIONS // {projects.length} FRAMES
+              TOTAL DOKUMENTASI // {projects.length} KARYA
             </span>
           </div>
         </div>

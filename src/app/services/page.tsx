@@ -7,76 +7,76 @@ import PricingSection from '@/components/PricingSection';
 import CTASection from '@/components/CTASection';
 
 export const metadata: Metadata = {
-  title: 'Services & Capabilities — NOIR FRAME',
+  title: 'Layanan & Kemampuan — NOIR FRAME',
   description:
-    'Explore our creative production disciplines: commercial photography, cinematic videography, brand visual direction, and event documentation.',
+    'Jelajahi disiplin produksi kreatif kami: fotografi komersial, videografi sinematik, arahan visual brand, dan dokumentasi event.',
 };
 
 const DETAILED_SERVICES = [
   {
     number: '01',
-    title: 'PHOTOGRAPHY',
-    subtitle: 'STILL IMAGERY ARCHITECTURE',
+    title: 'FOTOGRAFI',
+    subtitle: 'ARSITEKTUR STILL IMAGERY',
     description:
-      'We treat every frame as an archival composition. Whether documenting intimate sacred weddings, high-end commercial products, or architectural spaces, our approach combines subtle chiaroscuro lighting, medium format resolution, and raw documentary authenticity.',
+      'Kami memperlakukan setiap frame sebagai komposisi bernilai abadi. Mulai dari dokumentasi wisuda, sesi portrait personal, hingga komersial produk, pendekatan kami memadukan pencahayaan natural chiaroscuro, resolusi tinggi, dan keaslian momen.',
     deliverables: [
-      'Wedding Stories & Intimate Ceremonies',
-      'Commercial & Advertising Campaigns',
-      'Fine Art & Editorial Portraiture',
-      'Product & Still-Life Macro Photography',
-      'Event & Cultural Documentation',
-      'Architectural & Spatial Photography',
+      'Dokumentasi Wisuda & Momen Personal',
+      'Kampanye Komersial & Editorial Brand',
+      'Fine Art & Fotografi Portrait',
+      'Foto Produk & Still-Life Macro',
+      'Dokumentasi Acara & Momen Budaya',
+      'Fotografi Arsitektur & Ruang',
     ],
     gear: 'Hasselblad Medium Format • Leica M11 • Sony A1 Prime Ecosystem',
     image: '/porto/wedding/wedding-02.jpg',
   },
   {
     number: '02',
-    title: 'VIDEOGRAPHY',
-    subtitle: 'CINEMATIC MOTION & NARRATIVE',
+    title: 'VIDEOGRAFI',
+    subtitle: 'GERAK SINEMATIK & NARASI',
     description:
-      'From 60-second high-speed commercials to feature-length wedding and documentary films, we capture moving images with deliberate pacing, anamorphic flares, and organic cinema color rendering.',
+      'Mulai dari video reel vertikal berkecepatan dinamis hingga dokumentasi acara dan film sorotan wisuda sinematik, kami menangkap visual bergerak dengan ritme yang terjaga dan palet warna organik.',
     deliverables: [
-      'Brand Commercials & Launch Films',
-      'Cinematic Wedding Documentation Films',
-      'Cultural & Corporate Event Recaps',
-      'Anamorphic Narrative Campaigns',
-      'Social Cutdowns & Vertical 9:16 Visuals',
-      'Music Videos & Performing Arts Films',
+      'Iklan Komersial Brand & Peluncuran Produk',
+      'Film Dokumentasi Wisuda & Acara Sinematik',
+      'Dokumentasi Acara Korporat & Budaya',
+      'Kampanye Naratif Format Layar Lebar',
+      'Format Vertikal 9:16 untuk Reels & TikTok',
+      'Video Musik & Dokumentasi Pertunjukan',
     ],
     gear: 'ARRI Alexa Mini LF • RED V-RAPTOR 8K • Cooke Anamorphic /i',
     image: '/porto/commercial/commercial-02.jpg',
   },
   {
     number: '03',
-    title: 'CREATIVE PRODUCTION',
-    subtitle: 'FULL SCALE END-TO-END EXECUTION',
+    title: 'PRODUKSI KREATIF',
+    subtitle: 'EKSEKUSI LENGKAP DARI AWAL HINGGA AKHIR',
     description:
-      'A great image begins long before the shutter clicks. We lead treatment writing, visual moodboarding, location scouting across Southeast Asia, casting, and meticulous on-set lighting and art direction.',
+      'Sebuah karya visual lahir jauh sebelum tombol kamera ditekan. Kami memandu penulisan konsep, moodboard visual, pemilihan lokasi, arahan gaya, hingga penataan cahaya di set.',
     deliverables: [
-      'Concept Formulation & Moodboarding',
-      'Location Scouting & Production Permitting',
-      'On-Set Art Direction & Set Styling',
-      'Post-Production & Offline Editing',
-      'Master Color Grading (ACES Workflow)',
-      'Custom Sound Design & Audio Finishing',
+      'Perumusan Konsep & Moodboard',
+      'Riset Lokasi & Jadwal Produksi',
+      'Pengarahan Gaya Visual di Set',
+      'Pascaproduksi & Penyuntingan Video',
+      'Master Color Grading (Alur ACES)',
+      'Desain Audio & Finishing Tata Suara',
     ],
     gear: 'DaVinci Resolve Studio • Flanders Scientific Reference Displays',
     image: '/porto/campaign/campaign-03.jpg',
   },
   {
     number: '04',
-    title: 'BRAND VISUALS',
-    subtitle: 'HOLISTIC DIGITAL IDENTITY',
+    title: 'VISUAL BRANDING',
+    subtitle: 'IDENTITAS VISUAL DIGITAL MENYELURUH',
     description:
-      'Tailored visual ecosystems designed for luxury brands, architectural firms, and modern enterprises seeking an elevated visual presence across digital, print, and physical mediums.',
+      'Ekosistem visual terarah yang dirancang untuk brand, studio, dan personalia yang menginginkan kehadiran visual berkelas tinggi di berbagai platform digital dan media cetak.',
     deliverables: [
-      'Seasonal Lookbooks & Campaign Suites',
-      'E-Commerce High-Res Product Assets',
-      'Executive & Team Editorial Portraits',
-      'Social Media Curated Content Packages',
-      'Print Ad Spreads & Billboard Masters',
-      'Brand Visual Style Guides',
+      'Lookbook Musiman & Aset Kampanye',
+      'Foto Produk Resolusi Tinggi E-Commerce',
+      'Foto Portrait Eksekutif & Tim Kreatif',
+      'Paket Konten Media Sosial Terkurasi',
+      'Materi Iklan Cetak & Baliho Resolusi Master',
+      'Panduan Gaya Visual Identitas Brand',
     ],
     gear: 'Phase One IQ4 150MP • Broncolor Studio Lighting Systems',
     image: '/porto/product/product-01.jpg',
@@ -90,19 +90,19 @@ export default function ServicesPage() {
         {/* Page Header */}
         <div className="mb-10 sm:mb-28 pb-6 sm:pb-10 border-b border-white/[0.08]">
           <div className="flex items-center gap-2 text-xs font-mono tracking-cinematic uppercase text-neutral-500 mb-3 sm:mb-4">
-            <span>CAPABILITIES</span>
+            <span>KEMAMPUAN</span>
             <span>//</span>
-            <span>CREATIVE DISCIPLINES</span>
+            <span>DISIPLIN KREATIF</span>
           </div>
 
           <h1 className="text-3xl sm:text-6xl lg:text-7xl font-extrabold uppercase tracking-tight text-white leading-tight sm:leading-none">
-            DISCIPLINES
+            DISIPLIN
             <br />
-            <span className="text-neutral-300 font-light italic">& SERVICES.</span>
+            <span className="text-neutral-300 font-light italic">&amp; LAYANAN.</span>
           </h1>
 
           <p className="mt-4 sm:mt-6 text-xs sm:text-base max-w-2xl font-light text-neutral-400 leading-relaxed">
-            NOIR FRAME operates as an integrated creative studio. We unite artistic intentionality with technical rigor to craft unforgettable visual stories.
+            NOIR FRAME beroperasi sebagai studio kreatif visual terpadu. Kami menyatukan intensi artistik dengan presisi teknis untuk menghasilkan karya visual yang tak terlupakan.
           </p>
         </div>
 
@@ -168,7 +168,7 @@ export default function ServicesPage() {
                     {/* Deliverables Checklist */}
                     <div className="pt-4">
                       <span className="text-[11px] font-mono tracking-cinematic uppercase text-neutral-500 block mb-3">
-                        SCOPE & DELIVERABLES
+                        CAKUPAN &amp; LUARAN
                       </span>
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                         {item.deliverables.map((deliv, dIdx) => (
@@ -189,7 +189,7 @@ export default function ServicesPage() {
                         href="/contact"
                         className="inline-flex items-center gap-2 text-xs tracking-editorial uppercase text-white hover:text-neutral-300 border-b border-white/40 pb-1 hover:border-white transition-all group"
                       >
-                        <span>COMMISSION THIS SERVICE</span>
+                        <span>KONSULTASIKAN LAYANAN INI</span>
                         <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                       </Link>
                     </div>

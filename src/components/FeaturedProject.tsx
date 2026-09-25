@@ -53,7 +53,7 @@ export default function FeaturedProject({
           <div className="lg:col-span-5 flex flex-col justify-center space-y-5 sm:space-y-6">
             <div className="flex items-center gap-3">
               <span className="text-xs font-mono text-neutral-500 tracking-widest">
-                PROJECT {badgeNumber}
+                KARYA SOROTAN // 0{badgeNumber}
               </span>
               <span className="w-8 h-[1px] bg-white/20" />
               <span className="text-[11px] font-semibold tracking-cinematic uppercase text-neutral-400">
@@ -66,7 +66,7 @@ export default function FeaturedProject({
             </h2>
 
             <blockquote className="border-l border-white/20 pl-4 py-1 text-xs sm:text-base text-neutral-300 italic font-light">
-              &ldquo;From atmosphere to emotion, every frame is created to tell a story.&rdquo;
+              &ldquo;Dari atmosfer hingga emosi, setiap frame diciptakan untuk merangkai sebuah cerita bermakna.&rdquo;
             </blockquote>
 
             <p className="text-xs sm:text-sm text-neutral-400 font-light leading-relaxed">
@@ -76,11 +76,11 @@ export default function FeaturedProject({
             {/* Quick Metadata Spec Sheet */}
             <div className="grid grid-cols-2 gap-4 py-3 sm:py-4 border-y border-white/[0.06] text-xs font-mono">
               <div>
-                <span className="text-neutral-500 block text-[10px] tracking-wider uppercase">CLIENT</span>
+                <span className="text-neutral-500 block text-[10px] tracking-wider uppercase">KLIEN</span>
                 <span className="text-neutral-200">{project.client}</span>
               </div>
               <div>
-                <span className="text-neutral-500 block text-[10px] tracking-wider uppercase">LOCATION</span>
+                <span className="text-neutral-500 block text-[10px] tracking-wider uppercase">LOKASI</span>
                 <span className="text-neutral-200">{project.location}</span>
               </div>
             </div>
@@ -91,7 +91,7 @@ export default function FeaturedProject({
                 href={`/work/${project.slug}`}
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-white text-black font-semibold text-xs tracking-editorial uppercase hover:bg-neutral-200 transition-all group"
               >
-                <span>EXPLORE PROJECT</span>
+                <span>LIHAT DETAIL PROYEK</span>
                 <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
               </Link>
             </div>
