@@ -46,10 +46,11 @@ export default function Hero() {
         }}
       >
         <Image
-          src="/porto/hero-cinematic.jpg"
-          alt="NOIR FRAME Cinematic Background"
+          src="/porto/graduation/DSC09011.jpg"
+          alt="NOIR FRAME Cinematic Graduation Background"
           fill
           priority
+          loading="eager"
           sizes="100vw"
           className="object-cover opacity-60"
         />

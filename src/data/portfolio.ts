@@ -46,6 +46,42 @@ export interface Project {
 
 export const PORTFOLIO_PROJECTS: Project[] = [
   {
+    id: 'graduation-heritage-kebaya',
+    slug: 'wisuda-heritage-kebaya-etnik',
+    title: 'Janggan Keraton — Wisuda Etnik FEB ULM',
+    category: 'Graduation',
+    serviceType: 'Photography',
+    year: '2026',
+    location: 'Banjarmasin (Paviliun Budaya & Tangga Arsitektural ULM)',
+    client: 'Wisudawati Fakultas Ekonomi & Bisnis (FEB ULM)',
+    coverImage: '/porto/graduation/DSC09011.jpg',
+    description:
+      'Monograf wisuda editorial chiaroscuro yang memadukan wibawa agung kebaya janggan keraton khas Jawa Timur dengan latar artefak topeng kultural dan arsitektur klasik.',
+    story:
+      'Menghadirkan narasi kelulusan yang berakar kuat pada keanggunan warisan budaya dan sinematografi modern. Sesi ini mengeksplorasi wibawa agung kebaya janggan keraton khas Jawa Timur—dengan siluet kerah tinggi yang tegas dan bernuansa ningrat—berpadu harmonis dengan paviliun berlatar topeng tradisional Nusantara serta tangga arsitektur modern. Tata cahaya terarah chiaroscuro memahat detail tenun, bros keemasan, dan ketenangan sang wisudawati dalam balutan estetika noir yang abadi.',
+    images: [
+      '/porto/graduation/DSC09011.jpg',
+      '/porto/graduation/DSC08899.jpg',
+      '/porto/graduation/DSC08835.jpg',
+      '/porto/graduation/DSC08962.jpg',
+      '/porto/graduation/DSC08961.jpg',
+    ],
+    aspectRatio: 'landscape',
+    featured: true,
+    deliverables: [
+      'Master Seri Editorial Kebaya Janggan Keraton',
+      'Arsip Foto Resolusi Tinggi (Color Graded)',
+      'Koleksi Fine Art Cetak Bingkai Eksklusif',
+    ],
+    credits: [
+      { role: 'Fotografer Utama & Pengarah Konsep', name: 'NOIR FRAME' },
+      { role: 'Pengarah Tata Cahaya', name: 'NOIR Lighting Specialist' },
+      { role: 'Pascaproduksi & Color Grading', name: 'NOIR Color Lab' },
+      { role: 'Institusi', name: 'Universitas Lambung Mangkurat (ULM)' },
+    ],
+    cameraSpecs: 'Sony Alpha 7 Series • FE 85mm f/1.4 GM • FE 35mm f/1.4 GM • Off-Camera Directional Strobe',
+  },
+  {
     id: 'graduation-futri',
     slug: 'futri-risqi-cahyani-editorial',
     title: 'Futri Risqi Cahyani — Wisuda Arsitektural',
